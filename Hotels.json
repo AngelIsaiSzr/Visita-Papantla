@@ -1,0 +1,1031 @@
+{
+    "link": "https://www.tripadvisor.com/Hotels-g1202651-Papantla_Central_Mexico_and_Gulf_Coast-Hotels.html",
+    "total_pages": 2,
+    "current_page": 1,
+    "total_items_count": 42,
+    "items_count": 30,
+    "results": [
+        {
+            "id": 595695,
+            "name": "Hotel Tajin",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d595695-Reviews-Hotel_Tajin-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 124,
+            "rating": 3.5,
+            "price_range_usd": {
+                "min": 34,
+                "max": 51
+            },
+            "phone": "+52 784 842 0121",
+            "address": "Jos\u00e9 De Jes\u00fas Nu\u00f1ez 104, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Jos\u00e9 De Jes\u00fas Nu\u00f1ez 104",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 1,
+                "total": 3
+            },
+            "featured_image": null,
+            "latitude": 20.445902,
+            "longitude": -97.321175,
+            "amenities": [
+                "Free Wifi",
+                "Pool",
+                "Outdoor pool",
+                "Restaurant",
+                "Bar/Lounge"
+            ],
+            "providers": [
+                "Booking.com",
+                "Expedia.com",
+                "Hotels.com",
+                "StayForLong"
+            ]
+        },
+        {
+            "id": 7716391,
+            "name": "Hotel la Quinta de Los Leones",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d7716391-Reviews-Hotel_la_Quinta_de_Los_Leones-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 4,
+            "rating": 3,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "+52 782 181 1632",
+            "address": "Vereda Tropical N\u00b01 Zona Centro, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Vereda Tropical N\u00b01 Zona Centro",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 3,
+                "total": 6
+            },
+            "featured_image": null,
+            "latitude": 20.45045,
+            "longitude": -97.32827,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Room service",
+                "Pets Allowed",
+                "Bar/Lounge"
+            ],
+            "providers": [
+                "Vio.com"
+            ]
+        },
+        {
+            "id": 9777090,
+            "name": "Hotel Arenas",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d9777090-Reviews-Hotel_Arenas-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 1,
+            "rating": 4,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": null,
+            "address": "Victoria s/n, Valentin Gomez Farias, Papantla Mexico",
+            "detailed_address": {
+                "street": "Victoria s/n, Valentin Gomez Farias",
+                "city": "Papantla",
+                "postal_code": null,
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 2,
+                "total": 6
+            },
+            "featured_image": null,
+            "latitude": 20.453432,
+            "longitude": -97.33828,
+            "amenities": [
+                "Free Wifi",
+                "Free parking"
+            ],
+            "providers": [
+                "eDreams"
+            ]
+        },
+        {
+            "id": 2089493,
+            "name": "Hotel Casa Blanch",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d2089493-Reviews-Hotel_Casa_Blanch-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 14,
+            "rating": 3,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "",
+            "address": "Calle Benito Juarez 305 Papantla De Olarte, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Calle Benito Juarez 305, Papantla De Olarte",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 2,
+                "total": 3
+            },
+            "featured_image": null,
+            "latitude": 20.44894,
+            "longitude": -97.32057,
+            "amenities": [
+                "Free Wifi",
+                "Restaurant",
+                "Room service"
+            ],
+            "providers": [
+                "Algotels",
+                "Vio.com"
+            ]
+        },
+        {
+            "id": 3469298,
+            "name": "Quinta Hostal Del Moncayo.",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d3469298-Reviews-Quinta_Hostal_Del_Moncayo-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 9,
+            "rating": 3.5,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "+52 784 842 0498",
+            "address": "Calle Ignacio Zaragoza 108, Papantla 93532 Mexico",
+            "detailed_address": {
+                "street": "Calle Ignacio Zaragoza 108",
+                "city": "Papantla",
+                "postal_code": "93532",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 2,
+                "total": 5
+            },
+            "featured_image": null,
+            "latitude": 20.44754,
+            "longitude": -97.32696,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Restaurant"
+            ],
+            "providers": [
+                "Algotels",
+                "Vio.com"
+            ]
+        },
+        {
+            "id": 13087391,
+            "name": "Posada Familiar Papantla",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d13087391-Reviews-Posada_Familiar_Papantla-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 0,
+            "rating": 0,
+            "price_range_usd": {
+                "min": 27,
+                "max": 34
+            },
+            "phone": null,
+            "address": "Francisco I. Madero 208 Antes Venustiano Carranza 101, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Francisco I. Madero 208, Antes Venustiano Carranza 101",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.453943,
+            "longitude": -97.33343,
+            "amenities": [
+                "Free Wifi",
+                "Free parking"
+            ],
+            "providers": [
+                "Booking.com"
+            ]
+        },
+        {
+            "id": 20099767,
+            "name": "OYO Hotel Totonacapan, Papantla",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d20099767-Reviews-OYO_Hotel_Totonacapan_Papantla-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 2,
+            "rating": 2.5,
+            "price_range_usd": {
+                "min": 26,
+                "max": 35
+            },
+            "phone": "+52 55 7100 0309",
+            "address": "Calle Olivo Esq. 20 de Noviembre, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Calle Olivo, Esq. 20 de Noviembre",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 3,
+                "total": 3
+            },
+            "featured_image": null,
+            "latitude": 20.44826,
+            "longitude": -97.32215,
+            "amenities": [
+                "Restaurant"
+            ],
+            "providers": [
+                "Booking.com",
+                "Expedia.com",
+                "Hotels.com",
+                "StayForLong"
+            ]
+        },
+        {
+            "id": 18378545,
+            "name": "Posada Mondragon",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d18378545-Reviews-Posada_Mondragon-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 0,
+            "rating": 0,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": null,
+            "address": "Rio Misantla, Papantla 93458 Mexico",
+            "detailed_address": {
+                "street": "Rio Misantla",
+                "city": "Papantla",
+                "postal_code": "93458",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.44319,
+            "longitude": -97.30823,
+            "amenities": [],
+            "providers": [
+                "Booking.com"
+            ]
+        },
+        {
+            "id": 2478193,
+            "name": "Hotel Familiar Arenas",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d2478193-Reviews-Hotel_Familiar_Arenas-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 7,
+            "rating": 2.5,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "+52 784 842 0283",
+            "address": "Calle Juan Enriquez 307, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Calle Juan Enriquez 307",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 4,
+                "total": 6
+            },
+            "featured_image": null,
+            "latitude": 20.35894,
+            "longitude": -97.29218,
+            "amenities": [],
+            "providers": [
+                "Algotels",
+                "eDreams",
+                "Vio.com"
+            ]
+        },
+        {
+            "id": 19857998,
+            "name": "El Campanario Hostel",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d19857998-Reviews-El_Campanario_Hostel-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 0,
+            "rating": 0,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "+52 782 182 0295",
+            "address": "16 De Septiembre No.111, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "16 De Septiembre No.111",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.445492,
+            "longitude": -97.321655,
+            "amenities": [],
+            "providers": [
+                "eDreams"
+            ]
+        },
+        {
+            "id": 6553067,
+            "name": "Totonacopan Hotel",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d6553067-Reviews-Totonacopan_Hotel-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 3,
+            "rating": 2,
+            "price_range_usd": {
+                "min": 31,
+                "max": 35
+            },
+            "phone": "+52 784 842 1220",
+            "address": "cnr 20 de Noviembre & Olivo, Papantla Veracruz 93400 Mexico",
+            "detailed_address": {
+                "street": "cnr 20 de Noviembre & Olivo",
+                "city": "Papantla",
+                "postal_code": "Veracruz 93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 6,
+                "total": 6
+            },
+            "featured_image": null,
+            "latitude": 20.252115,
+            "longitude": -97.25655,
+            "amenities": [],
+            "providers": [
+                "eDreams",
+                "Agoda.com",
+                "Destinia.com"
+            ]
+        },
+        {
+            "id": 7021488,
+            "name": "Hotel Maria Otilia Falla",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d7021488-Reviews-Hotel_Maria_Otilia_Falla-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 4,
+            "rating": 2,
+            "price_range_usd": {
+                "min": 163,
+                "max": 167
+            },
+            "phone": "+52 782 146 1090",
+            "address": "Calle Mariano Escobedo 502 Gonzalez Ortega Y andres Quintana Roo, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Calle Mariano Escobedo 502, Gonzalez Ortega Y andres Quintana Roo",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 5,
+                "total": 5
+            },
+            "featured_image": null,
+            "latitude": 20.451254,
+            "longitude": -97.317825,
+            "amenities": [
+                "Free Wifi",
+                "Restaurant",
+                "Airport transportation",
+                "Room service"
+            ],
+            "providers": [
+                "Booking.com",
+                "Algotels",
+                "Priceline",
+                "eDreams"
+            ]
+        },
+        {
+            "id": 10065456,
+            "name": "Hotel Staku",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d10065456-Reviews-Hotel_Staku-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 0,
+            "rating": 0,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": null,
+            "address": "Ignacio Zaragoza S/n Col. Comunidad El Tajin, Papantla 93479 Mexico",
+            "detailed_address": {
+                "street": "Ignacio Zaragoza S/n, Col. Comunidad El Tajin",
+                "city": "Papantla",
+                "postal_code": "93479",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.44725,
+            "longitude": -97.32714,
+            "amenities": [],
+            "providers": [
+                "Vio.com"
+            ]
+        },
+        {
+            "id": 23526236,
+            "name": "Hostel del Centro",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d23526236-Reviews-Hostel_del_Centro-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 0,
+            "rating": 0,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "+52 782 117 7943",
+            "address": "Aquiles Serd\u00e1n, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Aquiles Serd\u00e1n",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.446367,
+            "longitude": -97.3293,
+            "amenities": [],
+            "providers": [
+                "Booking.com"
+            ]
+        },
+        {
+            "id": 23253306,
+            "name": "Cabanas de Beto",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d23253306-Reviews-Cabanas_de_Beto-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 0,
+            "rating": 0,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "+52 784 842 0715",
+            "address": "Av Venustiano Carranza 714, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Av Venustiano Carranza 714",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.44968,
+            "longitude": -97.31487,
+            "amenities": [],
+            "providers": [
+                "Algotels",
+                "Vio.com"
+            ]
+        },
+        {
+            "id": 5999520,
+            "name": "Hotel Campestre Tajin",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d5999520-Reviews-Hotel_Campestre_Tajin-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 1,
+            "rating": 1,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "+52 784 842 2211",
+            "address": "Carretera Poza Rica San Andres KM. 17.5, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Carretera Poza Rica San Andres KM. 17.5",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": {
+                "current_rank": 5,
+                "total": 6
+            },
+            "featured_image": null,
+            "latitude": 20.46068,
+            "longitude": -97.33935,
+            "amenities": [],
+            "providers": [
+                "Vio.com",
+                "Destinia.com"
+            ]
+        },
+        {
+            "id": 28564114,
+            "name": "El Rincon Preferido",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d28564114-Reviews-El_Rincon_Preferido-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 0,
+            "rating": 0,
+            "price_range_usd": {
+                "min": 33,
+                "max": 39
+            },
+            "phone": "+52 55 7338 5319",
+            "address": "101 Jos\u00e9 Rosas Moreno, Papantla 93470 Mexico",
+            "detailed_address": {
+                "street": "101 Jos\u00e9 Rosas Moreno",
+                "city": "Papantla",
+                "postal_code": "93470",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.437088,
+            "longitude": -97.33514,
+            "amenities": [],
+            "providers": [
+                "Expedia.com",
+                "Hotels.com",
+                "Booking.com",
+                "Agoda.com"
+            ]
+        },
+        {
+            "id": 25425137,
+            "name": "Freijo\u00f3 Casa Vintage",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202651-d25425137-Reviews-Freijoo_Casa_Vintage-Papantla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 0,
+            "rating": 0,
+            "price_range_usd": {
+                "min": 59,
+                "max": 61
+            },
+            "phone": "+52 229 510 7951",
+            "address": "Rodolfo Curt\u00ed #122, Papantla 93400 Mexico",
+            "detailed_address": {
+                "street": "Rodolfo Curt\u00ed #122",
+                "city": "Papantla",
+                "postal_code": "93400",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.442862,
+            "longitude": -97.31954,
+            "amenities": [],
+            "providers": [
+                "Booking.com"
+            ]
+        },
+        {
+            "id": 10483793,
+            "name": "Hotel Civic Express",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d10483793-Reviews-Hotel_Civic_Express-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 1,
+            "rating": 4,
+            "price_range_usd": {
+                "min": 35,
+                "max": 36
+            },
+            "phone": "+52 782 826 8072",
+            "address": "Privada 16 Norte No. 122, Colonia Obrera Centro, Poza Rica 93260 Mexico",
+            "detailed_address": {
+                "street": "Privada 16 Norte No. 122, Colonia Obrera, Centro",
+                "city": "Poza Rica",
+                "postal_code": "93260",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.52652,
+            "longitude": -97.46328,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Breakfast included",
+                "Restaurant",
+                "Room service"
+            ],
+            "providers": [
+                "Booking.com",
+                "Algotels",
+                "Priceline",
+                "eDreams"
+            ]
+        },
+        {
+            "id": 286653,
+            "name": "Hotel Poza Rica Centro",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d286653-Reviews-Hotel_Poza_Rica_Centro-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 189,
+            "rating": 4,
+            "price_range_usd": {
+                "min": 61,
+                "max": 68
+            },
+            "phone": "+52 782 826 0400",
+            "address": "Ave. 2 Norte y 10 Oriente S/N Colonia Obrera, Poza Rica 93260 Mexico",
+            "detailed_address": {
+                "street": "Ave. 2 Norte y 10 Oriente S/N, Colonia Obrera",
+                "city": "Poza Rica",
+                "postal_code": "93260",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.528437,
+            "longitude": -97.462135,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Breakfast included",
+                "Restaurant",
+                "Airport transportation"
+            ],
+            "providers": [
+                "Booking.com",
+                "Expedia.com",
+                "Hotels.com",
+                "StayForLong"
+            ]
+        },
+        {
+            "id": 3929995,
+            "name": "Paris FC Hotel",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d3929995-Reviews-Paris_FC_Hotel-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 42,
+            "rating": 4.5,
+            "price_range_usd": {
+                "min": 62,
+                "max": 70
+            },
+            "phone": "+52 782 160 6000",
+            "address": "Boulevard Adolfo Ruiz Cortines 1328 Colonia Cazones, Poza Rica 93230 Mexico",
+            "detailed_address": {
+                "street": "Boulevard Adolfo Ruiz Cortines 1328, Colonia Cazones",
+                "city": "Poza Rica",
+                "postal_code": "93230",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.543428,
+            "longitude": -97.45319,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Breakfast included",
+                "Restaurant",
+                "Airport transportation"
+            ],
+            "providers": [
+                "Booking.com",
+                "Expedia.com",
+                "Hotels.com",
+                "eDreams"
+            ]
+        },
+        {
+            "id": 649012,
+            "name": "Hotel Victoria Poza Rica by Brahma",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d649012-Reviews-Hotel_Victoria_Poza_Rica_by_Brahma-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 68,
+            "rating": 4,
+            "price_range_usd": {
+                "min": 46,
+                "max": 59
+            },
+            "phone": "+52 782 826 2600",
+            "address": "1306 Boulevard Adolfo Ru\u00edz Cortines Cazones, Poza Rica 93230 Mexico",
+            "detailed_address": {
+                "street": "1306 Boulevard Adolfo Ru\u00edz Cortines Cazones",
+                "city": "Poza Rica",
+                "postal_code": "93230",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.54303,
+            "longitude": -97.4536,
+            "amenities": [
+                "Free parking",
+                "Outdoor pool",
+                "Restaurant",
+                "Airport transportation",
+                "Room service"
+            ],
+            "providers": [
+                "Booking.com",
+                "Expedia.com",
+                "Hotels.com",
+                "eDreams"
+            ]
+        },
+        {
+            "id": 12296702,
+            "name": "Hotel Casa Real",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d12296702-Reviews-Hotel_Casa_Real-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 3,
+            "rating": 3.5,
+            "price_range_usd": {
+                "min": 20,
+                "max": 32
+            },
+            "phone": "+52 782 186 4682",
+            "address": "Calle Simon Bolivar 308 Col. Ricardo Flores Magon, Poza Rica 93340 Mexico",
+            "detailed_address": {
+                "street": "Calle Simon Bolivar 308, Col. Ricardo Flores Magon",
+                "city": "Poza Rica",
+                "postal_code": "93340",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.52749,
+            "longitude": -97.466896,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Pets Allowed"
+            ],
+            "providers": [
+                "Expedia.com",
+                "Booking.com",
+                "Hotels.com",
+                "eDreams"
+            ]
+        },
+        {
+            "id": 569421,
+            "name": "Fiesta Inn Poza Rica",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d569421-Reviews-Fiesta_Inn_Poza_Rica-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 324,
+            "rating": 4.5,
+            "price_range_usd": {
+                "min": 83,
+                "max": 106
+            },
+            "phone": "+52 782 826 1600",
+            "address": "Av. Ejercito Mexicano 103 Col. Palma Sola, Poza Rica 93320 Mexico",
+            "detailed_address": {
+                "street": "Av. Ejercito Mexicano 103, Col. Palma Sola",
+                "city": "Poza Rica",
+                "postal_code": "93320",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.545824,
+            "longitude": -97.46133,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Pool",
+                "Outdoor pool",
+                "Restaurant"
+            ],
+            "providers": [
+                "Booking.com",
+                "Expedia.com",
+                "Official Hotel",
+                "Hotels.com"
+            ]
+        },
+        {
+            "id": 1863615,
+            "name": "Rio Vista Inn",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d1863615-Reviews-Rio_Vista_Inn-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 73,
+            "rating": 4.5,
+            "price_range_usd": {
+                "min": 72,
+                "max": 82
+            },
+            "phone": "+52 782 824 5000",
+            "address": "Av Ejercito Mexicano 5 Col. Palma Sola, Poza Rica 93319 Mexico",
+            "detailed_address": {
+                "street": "Av Ejercito Mexicano 5, Col. Palma Sola",
+                "city": "Poza Rica",
+                "postal_code": "93319",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.547438,
+            "longitude": -97.46127,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Breakfast included",
+                "Pool",
+                "Outdoor pool"
+            ],
+            "providers": [
+                "Booking.com",
+                "Expedia.com",
+                "Hotels.com",
+                "Algotels"
+            ]
+        },
+        {
+            "id": 1966369,
+            "name": "La Quinta by Wyndham Poza Rica",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d1966369-Reviews-La_Quinta_by_Wyndham_Poza_Rica-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 194,
+            "rating": 4,
+            "price_range_usd": {
+                "min": 58,
+                "max": 61
+            },
+            "phone": "+52 782 826 4950",
+            "address": "Calle Las Torres - 1 Col Reforma, Poza Rica 93210 Mexico",
+            "detailed_address": {
+                "street": "Calle Las Torres - 1 Col Reforma",
+                "city": "Poza Rica",
+                "postal_code": "93210",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.563644,
+            "longitude": -97.436745,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Breakfast included",
+                "Pool",
+                "Indoor pool"
+            ],
+            "providers": [
+                "Booking.com",
+                "Expedia.com",
+                "Hotels.com",
+                "Wyndham"
+            ]
+        },
+        {
+            "id": 2084292,
+            "name": "City Express Poza Rica",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d2084292-Reviews-City_Express_Poza_Rica-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 208,
+            "rating": 3.5,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "+52 782 826 4300",
+            "address": "Carretera Acceso Puente Cazones No. 68, Poza Rica 92902 Mexico",
+            "detailed_address": {
+                "street": "Carretera Acceso Puente Cazones No. 68",
+                "city": "Poza Rica",
+                "postal_code": "92902",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.553442,
+            "longitude": -97.46487,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Breakfast included",
+                "Airport transportation",
+                "Free airport transportation"
+            ],
+            "providers": [
+                "Algotels",
+                "Vio.com"
+            ]
+        },
+        {
+            "id": 4040261,
+            "name": "Hosteria de Rio . C92",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g3191769-d4040261-Reviews-Hosteria_de_Rio_C92-Gutierrez_Zamora_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 21,
+            "rating": 5,
+            "price_range_usd": {
+                "min": 91,
+                "max": 135
+            },
+            "phone": "+52 55 4130 9896",
+            "address": "Avila Camacho 92-A Colonia Centro, Gutierrez Zamora 93556 Mexico",
+            "detailed_address": {
+                "street": "Avila Camacho 92-A, Colonia Centro",
+                "city": "Gutierrez Zamora",
+                "postal_code": "93556",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.456835,
+            "longitude": -97.083015,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Breakfast included",
+                "Beachfront",
+                "Restaurant"
+            ],
+            "providers": [
+                "Booking.com",
+                "Priceline",
+                "eDreams",
+                "Vio.com"
+            ]
+        },
+        {
+            "id": 1433843,
+            "name": "Hotel Poza Rica Inn",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202655-d1433843-Reviews-Hotel_Poza_Rica_Inn-Poza_Rica_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 62,
+            "rating": 4,
+            "price_range_usd": {
+                "min": 66,
+                "max": 72
+            },
+            "phone": "+52 782 826 0300",
+            "address": "Blvd. Poza Rica Km 4.5 colonia Anahuac, Poza Rica Mexico",
+            "detailed_address": {
+                "street": "Blvd. Poza Rica Km 4.5, colonia Anahuac",
+                "city": "Poza Rica",
+                "postal_code": "",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.516882,
+            "longitude": -97.44213,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Pool",
+                "Outdoor pool",
+                "Restaurant"
+            ],
+            "providers": [
+                "Booking.com",
+                "Expedia.com",
+                "Hotels.com",
+                "Algotels"
+            ]
+        },
+        {
+            "id": 2097116,
+            "name": "Hotel Victoria",
+            "link": "https://www.tripadvisor.com/Hotel_Review-g1202653-d2097116-Reviews-Hotel_Victoria-Tecolutla_Central_Mexico_and_Gulf_Coast.html",
+            "reviews": 30,
+            "rating": 4.5,
+            "price_range_usd": {
+                "min": null,
+                "max": null
+            },
+            "phone": "+52 55 2057 3664",
+            "address": "Calle Benito Juarez No. 88, Tecolutla 93570 Mexico",
+            "detailed_address": {
+                "street": "Calle Benito Juarez No. 88",
+                "city": "Tecolutla",
+                "postal_code": "93570",
+                "state": "Veracruz",
+                "country": "Mexico"
+            },
+            "ranking": null,
+            "featured_image": null,
+            "latitude": 20.480623,
+            "longitude": -97.01236,
+            "amenities": [
+                "Free Wifi",
+                "Free parking",
+                "Pool",
+                "Beachfront",
+                "Room service"
+            ],
+            "providers": []
+        }
+    ]
+}

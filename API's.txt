@@ -1,0 +1,3 @@
+Claves de prueba | URL base: test.api.amadeus.com
+Clave API: ZRxakJoubhmO8kRBJyxhwigxMI5Mwn0Z
+Secreto de API: MMCF3pwOyBksLQPq
