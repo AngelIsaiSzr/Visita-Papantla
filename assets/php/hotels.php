@@ -20,7 +20,7 @@ $result = $conn->query($sql);
         <div class="room-item shadow rounded overflow-hidden">
             <div class="position-relative">
                 <img class="img-fluid" src="<?php echo $row['image']; ?>" alt="">
-                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$<?php echo $row['price']; ?> / Night</small>
+                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$<?php echo $row['price']; ?> / Noche</small>
             </div>
             <div class="p-4 mt-2">
                 <div class="d-flex justify-content-between mb-3">

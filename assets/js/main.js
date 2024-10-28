@@ -475,6 +475,15 @@
 function setTheme(themeName) {
     localStorage.setItem('clim_theme', themeName);
     document.documentElement.className = themeName;
+
+    // Set CSS variables based on the theme
+    if (themeName === 'theme-light') {
+        document.documentElement.style.setProperty('--mainColor', '#321619');
+        document.documentElement.style.setProperty('--secondaryColor', '#93753f');
+    } else {
+        document.documentElement.style.setProperty('--mainColor', '#c7a23f');
+        document.documentElement.style.setProperty('--secondaryColor', '#231619');
+    }
 }
 
 // function to toggle between light and dark theme

@@ -58,7 +58,7 @@
   background: white url("../img/night.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #091315;
+  background-color: #121212;
   background-size: 17px;
 }
 
@@ -171,7 +171,7 @@
 }
 
 .theme-dark .header-wrap .header-top {
-  background-color: #121212;
+  background-color: #191919;
 }
 
 .theme-dark .header-wrap .header-top .header-top-right .social-profile li a {
@@ -183,7 +183,7 @@
 }
 
 .theme-dark .header-wrap .header-bottom {
-  background-color: #191919;
+  background-color: #121212;
 }
 
 .theme-dark .header-wrap .header-bottom .searchbox input {
@@ -522,7 +522,7 @@
 
   .theme-dark .main-menu-wrap,
   .theme-dark .header-wrap .navbar .navbar-nav .nav-item .dropdown-menu {
-    background-color: #091315;
+    background-color: #121212;
   }
 
   .theme-dark .menu-close i,
