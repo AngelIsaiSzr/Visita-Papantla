@@ -10,8 +10,8 @@
         content="Visita Papantla - Elevating Project Success with Cutting Edge Engineering Solutions and On-Time Precision">
     <title>Visita Papantla</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
 
     <!-- Link of CSS files -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -83,7 +83,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-lg-6 col-md-6">
+                        <div class="col-xl-5 col-lg-6 col-md-6 text-align">
                             <div class="header-top-right">
                                 <ul class="social-profile list-style style1">
                                     <li>
@@ -117,19 +117,19 @@
                                         <div class="dropdown-menu language-dropdown-menu">
                                             <a class="dropdown-item" href="#">
                                                 <img src="assets/img/flag/spain.jpg" alt="flag">
-                                                Spa
+                                                Esp
                                             </a>
                                             <a class="dropdown-item" href="#">
                                                 <img src="assets/img/flag/us.jpg" alt="flag">
-                                                Eng
+                                                Ing
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="assets/img/flag/japan.jpg" alt="flag">
+                                                Jap
                                             </a>
                                             <a class="dropdown-item" href="#">
                                                 <img src="assets/img/flag/france.jpg" alt="flag">
                                                 Fra
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="assets/img/flag/russia.jpg" alt="flag">
-                                                Rus
                                             </a>
                                             <a class="dropdown-item" href="#">
                                                 <img src="assets/img/flag/italy.jpg" alt="flag">
@@ -180,7 +180,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href="#" class="nav-link">
                                         Contacto
                                     </a>
                                 </li>
@@ -254,32 +254,39 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="custom-card">
-                                <h2 class="section-title title">Login Now</h2>
-                                <input type="email" class="form-control" placeholder="Email" required>
-                                <input type="password" class="form-control" placeholder="Password" required>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
-                                    <label class="form-check-label" for="flexCheckChecked1">
-                                        Remember password
-                                    </label>
-                                </div>
-                                <button class="blue-btn">Login</button>
+                                <h2 class="section-title title">Iniciar Sesión</h2>
+                                <form action="assets/php/login.php" name="login-form" method="POST">
+                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
+                                    <input type="password" class="form-control" name="password" placeholder="Contraseña"
+                                        required>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+                                        <label class="form-check-label" for="flexCheckChecked1">
+                                            Recordar la contraseña
+                                        </label>
+                                    </div>
+                                    <button class="blue-btn">Ingresar</button>
+                                </form>
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="custom-card">
-                                <h2 class="section-title title">Register Now</h2>
-                                <input type="text" class="form-control" placeholder="Full Name" Required>
-                                <input type="email" class="form-control" placeholder="Email" Required>
-                                <input type="password" class="form-control" placeholder="Password" Required>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
-                                    <label class="form-check-label" for="flexCheckChecked2">
-                                        I will follow all of the <a href="privacy-policy.html">privacy policy</a>.
-                                    </label>
-                                </div>
-                                <button class="blue-btn">Register</button>
+                                <h2 class="section-title title">Registrarse</h2>
+                                <form action="assets/php/register.php" name="register-form" method="POST">
+                                    <input type="text" class="form-control" name="name" placeholder="Nombre completo"
+                                        Required>
+                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
+                                    <input type="password" class="form-control" name="password" placeholder="Contraseña"
+                                        required>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+                                        <label class="form-check-label" for="flexCheckChecked2">
+                                            Acepto la <a href="privacy-policy.html">politica de privacidad</a>.
+                                        </label>
+                                    </div>
+                                    <button class="blue-btn">Registrarse</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -431,7 +438,8 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-md-6 col-sm-7">
-                            <p class="copyright-text">© 2024 Visita Papantla - Hotel, Resort, Motel HTML and Bootstrap Website
+                            <p class="copyright-text">© 2024 Visita Papantla - Hotel, Resort, Motel HTML and Bootstrap
+                                Website
                                 Template. All Rights Reserved.</p>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-5">
@@ -466,6 +474,45 @@
 
     </div>
     <!-- Page Wrapper End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="messageModalLabel">Mensaje</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalMessage">
+                    <!-- Aquí se mostrará el mensaje -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Capturar el mensaje y el tipo de la URL y mostrar el modal
+        document.addEventListener("DOMContentLoaded", function () {
+            const params = new URLSearchParams(window.location.search);
+            const message = params.get("message");
+            const type = params.get("type");
+
+            if (message) {
+                document.getElementById("modalMessage").innerText = decodeURIComponent(message);
+
+                // Cambiar el título del modal según el tipo
+                const title = type === "login" ? "Mensaje de Inicio de Sesión" : "Mensaje de Registro";
+                document.getElementById("messageModalLabel").innerText = title;
+
+                // Mostrar el modal
+                var messageModal = new bootstrap.Modal(document.getElementById("messageModal"));
+                messageModal.show();
+            }
+        });
+    </script>
 
     <!-- Back-to-top Button Start -->
     <a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
