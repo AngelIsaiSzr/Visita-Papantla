@@ -344,11 +344,12 @@
 }
 
 .theme-dark .accordion-item {
-  background-color: #181818;
+  background-color: #666666;
 }
 
 .theme-dark .faq-accordion .accordion .accordion-title {
-  background: var(--blackColor);
+  background: #181818;
+  color: var(--whiteColor);
 }
 
 .theme-dark .faq-accordion .accordion .accordion-content {
@@ -374,6 +375,10 @@
 }
 
 .theme-dark .single-counter {
+  background-color: #121212;
+}
+
+.theme-dark .single-counter:hover i {
   background-color: #121212;
 }
 
@@ -490,8 +495,20 @@
   color: var(--whiteColor);
 }
 
+.theme-dark .modal-title {
+  color: var(--blackColor) !important;
+}
+
 .theme-dark .my-account-area .custom-card {
   background-color: var(--blackColor);
+}
+
+.theme-dark .my-account-area .custom-card a {
+  color: var(--mainColor) !important;
+}
+
+.theme-dark .my-account-area .custom-card a:hover {
+  color: var(--whiteColor) !important;
 }
 
 .theme-dark .my-account-area .blue-btn:hover {
@@ -504,10 +521,6 @@
 
 .theme-dark .banner-bg-video .search input::-webkit-search-cancel-button {
   filter: invert(1);
-}
-
-.theme-dark .banner-wrapper-area {
-  background-color: var(--blackColor);
 }
 
 .theme-dark .banner-btn:hover {

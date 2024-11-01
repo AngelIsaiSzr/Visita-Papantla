@@ -31,16 +31,16 @@ if ($stmt->num_rows > 0) {
 
     if (password_verify($contraseña, $hashed_password)) {
         $message = "Inicio de sesión exitoso. ¡Bienvenido!";
-        header("Location: ../../my-account.html?message=" . urlencode($message) . "&type=login");
+        header("Location: ../../login.html?message=" . urlencode($message));
         exit();
     } else {
         $message = "Contraseña incorrecta.";
-        header("Location: ../../my-account.html?message=" . urlencode($message) . "&type=login");
+        header("Location: ../../login.html?message=" . urlencode($message));
         exit();
     }
 } else {
     $message = "No se encontró una cuenta con este correo.";
-    header("Location: ../../my-account.html?message=" . urlencode($message) . "&type=login");
+    header("Location: ../../login.html?message=" . urlencode($message));
     exit();
 }
 

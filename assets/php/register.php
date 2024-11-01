@@ -30,11 +30,11 @@ $stmt->bind_param("sss", $nombre, $correo, $hashed_password);
 
 if ($stmt->execute()) {
     $message = "Registro exitoso. ¡Bienvenido!";
-    header("Location: ../../my-account.html?message=" . urlencode($message) . "&type=register");
+    header("Location: ../../register?message=" . urlencode($message));
     exit();
 } else {
     $message = "Error: " . $stmt->error;
-    header("Location: ../../my-account.html?message=" . urlencode($message) . "&type=register");
+    header("Location: ../../register?message=" . urlencode($message));
     exit();
 }
 

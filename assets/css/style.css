@@ -166,13 +166,17 @@ textarea {
 }
 
 @media only screen and (max-width: 767px) {
-
   button,
   input[type="button"],
   input[type="reset"],
   input[type="submit"] {
     font-size: 15px;
     padding: 14px 24px;
+  }
+
+  select,
+  select.form-control {
+    width: 100%;
   }
 }
 
@@ -2014,7 +2018,7 @@ p:empty {
     margin-left: 0px;
     padding-left: 0px;
   }
-  
+
   .header-wrap .header-top .header-top-right .social-profile li {
     margin-left: 0px;
   }
@@ -2047,7 +2051,8 @@ p:empty {
     font-size: 18px;
   }
 
-  .user-account, .select-lang {
+  .user-account,
+  .select-lang {
     margin-top: 0px;
   }
 }
@@ -2791,6 +2796,7 @@ p:empty {
   margin: 25px 0 30px 0;
   padding-bottom: 25px;
   position: relative;
+  text-align: justify;
 }
 
 .footer-wrap .footer-widget .comp-desc:after {
@@ -3321,6 +3327,7 @@ Accordion Area CSS
   padding: 23px;
   background-color: var(--bgColor);
   font-size: 16px;
+  text-align: justify;
 }
 
 .faq-accordion .accordion .accordion-content.show {
@@ -4057,6 +4064,7 @@ About Area CSS
 
 .about-content-two p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .about-content-two ul {
@@ -4138,7 +4146,7 @@ About Area CSS
 }
 
 .single-counter i {
-  background-color: #def5ee;
+  background-color: var(--bgColor);
   color: var(--mainColor);
   font-size: 30px;
   line-height: 1;
@@ -4359,26 +4367,29 @@ Features Area CSS
 }
 
 .features-area .feature-content .subtitle {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 5px;
   display: block;
+  color: #666666;
 }
 
 .features-area .feature-content .title {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 24px;
   line-height: 1.2;
+  color: var(--blackColor)
 }
 
 .features-area .feature-content p {
   margin-bottom: 30px;
+  text-align: justify;
+}
+
+.features-area .feature-content ul li {
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 767px) {
-  .features-area .column:first-child {
-    margin-bottom: 20px;
-  }
-
   .features-area .feature-content .title {
     font-size: 20px;
     margin-bottom: 16px;
@@ -5070,7 +5081,7 @@ Blog Details Area CSS
 }
 
 /*================================================
-Mi Cuenta Area CSS
+My Account Area CSS
 =================================================*/
 .my-account-area .custom-card {
   padding: 30px;
@@ -5091,7 +5102,11 @@ Mi Cuenta Area CSS
 }
 
 .my-account-area .form-check {
-  margin: 20px 0;
+  margin: 5px 0;
+}
+
+.my-account-area .blue-btn {
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -5101,6 +5116,10 @@ Mi Cuenta Area CSS
 
   .my-account-area .col-lg-6:last-child .custom-card {
     margin-bottom: 0px;
+  }
+
+  .my-account-area .form-check {
+    margin: 20px 0;
   }
 }
 
@@ -5120,7 +5139,6 @@ Banner Area CSS
 .banner-wrapper-area {
   position: relative;
   z-index: 1;
-  background-color: var(--bgColor);
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -5133,6 +5151,7 @@ Banner Area CSS
 .banner-wrapper-content p {
   font-size: 17px;
   color: #222222;
+  text-align: justify;
 }
 
 .banner-wrapper-image {
@@ -5142,8 +5161,7 @@ Banner Area CSS
 }
 
 .banner-wrapper-image img {
-  width: 100%;
-  border-radius: 10px;
+  width: 88%;
 }
 
 .banner-wrapper-content .btn-box {
@@ -5156,8 +5174,8 @@ Banner Area CSS
 
 @media only screen and (max-width: 767px) {
   .banner-wrapper-area {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 
   .banner-wrapper-content {
