@@ -216,6 +216,10 @@
   background-color: var(--blackColor) !important;
 }
 
+.theme-dark .hotel-search-area div {
+  color: var(--whiteColor);
+}
+
 .theme-dark .hotel-search-area .btn.btn-primary:hover {
   background-color: #121212 !important;
 }
@@ -404,6 +408,10 @@
 
 .theme-dark .features-area .feature-content .btn.style4 {
   border-color: var(--mainColor);
+}
+
+.theme-dark .features-area .feature-content li {
+  color: var(--whiteColor);
 }
 
 .theme-dark .team-details-content .social-share li a {
