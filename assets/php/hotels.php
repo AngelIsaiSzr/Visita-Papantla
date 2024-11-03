@@ -15,7 +15,6 @@ $sql = "SELECT * FROM hoteles";
 $result = $conn->query($sql);
 ?>
 
-<div class="room-slider owl-carousel owl-theme">
     <?php while($row = $result->fetch_assoc()): ?>
         <div class="room-item shadow rounded overflow-hidden">
             <div class="position-relative">
@@ -44,6 +43,5 @@ $result = $conn->query($sql);
             </div>
         </div>
     <?php endwhile; ?>
-</div>
 
 <?php $conn->close(); ?>
