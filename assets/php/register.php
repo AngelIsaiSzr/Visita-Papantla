@@ -1,21 +1,23 @@
 <?php
 // Conectar a la base de datos
-$servername = "localhost:3309";
-$username = "root";
-$password = "moreno15";
-$dbname = "visitapapantla";
+$host_name = 'db5016594095.hosting-data.io';
+$database = 'dbs13455695';
+$user_name = 'dbu5410004';
+$password = 'VisitaPapantla@0';
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$link = new mysqli($host_name, $user_name, $password, $database);
 
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+if ($link->connect_error) {
+  die('<p>Error al conectar con servidor MySQL: '. $link->connect_error .'</p>');
+} else {
+  echo '<p>Se ha establecido la conexión al servidor MySQL con éxito.</p>';
 }
 
 // Establecer la codificación de caracteres a utf8mb4
-$conn->set_charset("utf8mb4");
+$link->set_charset("utf8mb4");
 
 // Preparar e insertar datos en la tabla usuarios
-$stmt = $conn->prepare("INSERT INTO usuarios (nombre, correo, contraseña) VALUES (?, ?, ?)");
+$stmt = $link->prepare("INSERT INTO usuarios (nombre, correo, contraseña) VALUES (?, ?, ?)");
 
 // Obtener datos del formulario
 $nombre = $_POST['name'];
@@ -40,5 +42,5 @@ if ($stmt->execute()) {
 
 // Cerrar la conexión
 $stmt->close();
-$conn->close();
+$link->close();
 ?>
