@@ -1,15 +1,9 @@
 <?php
-require 'vendor/autoload.php'; // Asegúrate de que este archivo esté en la ruta correcta
-
-// Cargar las variables de entorno
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
 // Conectar a la base de datos
-$servername = $_ENV['DB_HOST'];
-$username = $_ENV['DB_USERNAME'];
-$password = $_ENV['DB_PASSWORD'];
-$dbname = $_ENV['DB_DATABASE'];
+$servername = "localhost:3309";
+$username = "root";
+$password = "moreno15";
+$dbname = "visitapapantla";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
