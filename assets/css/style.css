@@ -5826,6 +5826,10 @@ Room Area CSS
   color: var(--mainColor) !important;
 }
 
+.room-area .room-item p {
+  text-align: justify;
+}
+
 .room-area .room-item .btn.style2 {
   background-color: var(--blackColor);
 }
