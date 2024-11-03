@@ -1,25 +1,25 @@
 <?php
 // Conectar a la base de datos
-$servername = "localhost:3309";
-$username = "root";
-$password = "moreno15";
-$dbname = "visitapapantla";
+$host_name = 'db5016594095.hosting-data.io';
+$database = 'dbs13455695';
+$user_name = 'dbu5410004';
+$password = 'VisitaPapantla@0';
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$link = new mysqli($host_name, $user_name, $password, $database);
 
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+if ($link->connect_error) {
+  die('<p>Error al conectar con servidor MySQL: '. $link->connect_error .'</p>');
 }
 
 // Establecer la codificación de caracteres a utf8mb4
-$conn->set_charset("utf8mb4");
+$link->set_charset("utf8mb4");
 
 // Obtener datos del formulario
 $correo = $_POST['email'];
 $contraseña = $_POST['password'];
 
 // Preparar y ejecutar la consulta para buscar el usuario
-$stmt = $conn->prepare("SELECT contraseña FROM usuarios WHERE correo = ?");
+$stmt = $link->prepare("SELECT contraseña FROM usuarios WHERE correo = ?");
 $stmt->bind_param("s", $correo);
 $stmt->execute();
 $stmt->store_result();
@@ -46,5 +46,5 @@ if ($stmt->num_rows > 0) {
 
 // Cerrar la conexión
 $stmt->close();
-$conn->close();
+$link->close();
 ?>
