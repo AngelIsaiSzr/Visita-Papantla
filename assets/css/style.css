@@ -5807,54 +5807,54 @@ Hotel Search Area CSS
 }
 
 /*================================================
-Room Area CSS
+Hotel Area CSS
 =================================================*/
-.room-area .room-item {
+.hotel-area .hotel-item {
   margin-top: 40px;
 }
 
-.room-area .room-item .text-primary {
+.hotel-area .hotel-item .text-primary {
   color: #FEA116 !important;
   font-size: 16px;
 }
 
-.room-area .room-item img+small {
+.hotel-area .hotel-item img+small {
   background-color: var(--mainColor) !important;
 }
 
-.room-area .room-item .features span i {
+.hotel-area .hotel-item .features span i {
   color: var(--mainColor) !important;
 }
 
-.room-area .room-item p {
+.hotel-area .hotel-item p {
   text-align: justify;
 }
 
-.room-area .room-item .btn.style2 {
+.hotel-area .hotel-item .btn.style2 {
   background-color: var(--blackColor);
 }
 
-.room-area .room-item .btn.style1::before,
-.room-area .room-item .btn.style1::after,
-.room-area .room-item .btn.style2::before,
-.room-area .room-item .btn.style2::after {
+.hotel-area .hotel-item .btn.style1::before,
+.hotel-area .hotel-item .btn.style1::after,
+.hotel-area .hotel-item .btn.style2::before,
+.hotel-area .hotel-item .btn.style2::after {
   transition: none;
 }
 
-.room-area .room-item .btn.style2:hover::before,
-.room-area .room-item .btn.style2:hover::after {
+.hotel-area .hotel-item .btn.style2:hover::before,
+.hotel-area .hotel-item .btn.style2:hover::after {
   background-color: var(--mainColor);
   transition: none;
 }
 
-.room-area .room-slider .room-item {
+.hotel-area .hotel-slider .hotel-item {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 15px;
 }
 
-.room-slider.owl-theme .owl-nav .owl-prev,
-.room-slider.owl-theme .owl-nav .owl-next {
+.hotel-slider.owl-theme .owl-nav .owl-prev,
+.hotel-slider.owl-theme .owl-nav .owl-next {
   top: 50%;
   padding: 0;
   left: -15px;
@@ -5873,13 +5873,13 @@ Room Area CSS
   background-color: var(--mainColor);
 }
 
-.room-slider.owl-theme .owl-nav .owl-prev i,
-.room-slider.owl-theme .owl-nav .owl-next i {
+.hotel-slider.owl-theme .owl-nav .owl-prev i,
+.hotel-slider.owl-theme .owl-nav .owl-next i {
   color: var(--whiteColor);
 }
 
-.room-slider.owl-theme .owl-nav .owl-prev:hover,
-.room-slider.owl-theme .owl-nav .owl-next:hover {
+.hotel-slider.owl-theme .owl-nav .owl-prev:hover,
+.hotel-slider.owl-theme .owl-nav .owl-next:hover {
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   background-color: var(--secondaryColor);
@@ -5887,120 +5887,120 @@ Room Area CSS
   border-color: var(--secondaryColor);
 }
 
-.room-slider.owl-theme .owl-nav .owl-next {
+.hotel-slider.owl-theme .owl-nav .owl-next {
   left: auto;
   right: -15px;
 }
 
-.room-slider.owl-theme .owl-nav {
+.hotel-slider.owl-theme .owl-nav {
   margin-top: 0;
 }
 
-.room-slider.owl-theme.owl-carousel .owl-dots button.owl-dot {
+.hotel-slider.owl-theme.owl-carousel .owl-dots button.owl-dot {
   bottom: -20px;
 }
 
 @media only screen and (max-width: 767px) {
-  .room-area .room-item {
+  .hotel-area .hotel-item {
     margin-top: 20px;
   }
 
-  .room-area .room-slider .room-item {
+  .hotel-area .hotel-slider .hotel-item {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
   }
 
-  .room-area .room-item h5 {
+  .hotel-area .hotel-item h5 {
     font-size: 18px;
   }
 
-  .room-area .room-item .text-primary {
+  .hotel-area .hotel-item .text-primary {
     line-height: 28px;
     font-size: 15px;
   }
 
-  .room-area .room-item .btn.style1 {
+  .hotel-area .hotel-item .btn.style1 {
     margin: 0 5px 0 0;
   }
 
-  .room-slider.owl-theme .owl-nav .owl-prev,
-  .room-slider.owl-theme .owl-nav .owl-next {
+  .hotel-slider.owl-theme .owl-nav .owl-prev,
+  .hotel-slider.owl-theme .owl-nav .owl-next {
     left: -20px;
   }
 
-  .room-slider.owl-theme .owl-nav .owl-next {
+  .hotel-slider.owl-theme .owl-nav .owl-next {
     right: -20px;
     left: initial;
   }
 
-  .room-slider.owl-theme.owl-carousel .owl-dots button.owl-dot {
+  .hotel-slider.owl-theme.owl-carousel .owl-dots button.owl-dot {
     bottom: -10px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .room-area .room-item {
+  .hotel-area .hotel-item {
     margin-top: 30px;
   }
 
-  .room-area .room-slider .room-item {
+  .hotel-area .hotel-slider .hotel-item {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 20px;
   }
 
-  .room-area .room-item .text-primary {
+  .hotel-area .hotel-item .text-primary {
     line-height: 28px;
     font-size: 15px;
   }
 
-  .room-slider.owl-theme.owl-carousel .owl-dots button.owl-dot {
+  .hotel-slider.owl-theme.owl-carousel .owl-dots button.owl-dot {
     bottom: -15px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .room-area .room-slider .room-item {
+  .hotel-area .hotel-slider .hotel-item {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
   }
 
-  .room-area .room-item .text-primary {
+  .hotel-area .hotel-item .text-primary {
     line-height: 28px;
     font-size: 15px;
   }
 
-  .room-area .room-item .btn.style1 {
+  .hotel-area .hotel-item .btn.style1 {
     margin: 0 5px 0 0;
   }
 
-  .room-slider.owl-theme.owl-carousel .owl-dots button.owl-dot {
+  .hotel-slider.owl-theme.owl-carousel .owl-dots button.owl-dot {
     bottom: -5px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .room-list .room-item .room-list-first {
+  .hotel-list .hotel-item .hotel-list-first {
     width: 50%;
     float: left;
   }
 
-  .room-list .room-item .room-list-last {
+  .hotel-list .hotel-item .hotel-list-last {
     width: 50%;
     float: left;
   }
 
-  .room-list .room-item .room-list-first .top-100 {
+  .hotel-list .hotel-item .hotel-list-first .top-100 {
     top: 3.4% !important;
   }
 }
 
 /*================================================
-Room Details Area CSS
+Hotel Details Area CSS
 =================================================*/
-.room-details-area .room-detail-meta {
+.hotel-details-area .hotel-detail-meta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6008,54 +6008,54 @@ Room Details Area CSS
   max-width: 100%;
 }
 
-.room-details-area .sticky-top .title {
+.hotel-details-area .sticky-top .title {
   font-size: 25px;
   margin-bottom: 10px;
 }
 
-.room-details-area .sticky-top .btn {
+.hotel-details-area .sticky-top .btn {
   display: block;
 }
 
-.room-details-area .sticky-top .d-block i {
+.hotel-details-area .sticky-top .d-block i {
   position: relative;
   top: 1px;
 }
 
-.room-details-area .sticky-top .price {
+.hotel-details-area .sticky-top .price {
   font-size: 30px;
   color: var(--mainColor);
   margin-bottom: 15px;
 }
 
-.room-details-area .sticky-top .area {
+.hotel-details-area .sticky-top .area {
   font-size: 17px;
   color: var(--blackColor);
 }
 
-.room-details-area .sticky-top .agent-contact-name a:hover {
+.hotel-details-area .sticky-top .agent-contact-name a:hover {
   opacity: 0.7;
 }
 
-.room-details-area .sticky-top .agent-contact-avatar {
+.hotel-details-area .sticky-top .agent-contact-avatar {
   width: 50px;
 }
 
-.room-details-area .agent-contact-inner .text-primary a:hover {
+.hotel-details-area .agent-contact-inner .text-primary a:hover {
   color: var(--whiteColor);
 }
 
-.room-details-area .agent-contact-inner a.btn.btn-link {
+.hotel-details-area .agent-contact-inner a.btn.btn-link {
   color: var(--whiteColor);
   font-size: 15px;
   background: transparent;
 }
 
-.room-details-area .agent-contact-inner a.btn.btn-link:hover {
+.hotel-details-area .agent-contact-inner a.btn.btn-link:hover {
   color: var(--mainColor);
 }
 
-.room-detail-meta>li>a {
+.hotel-detail-meta>li>a {
   margin-right: -1px;
   border: 1px solid #eeeeee;
   padding: 14px 20px;
@@ -6063,21 +6063,21 @@ Room Details Area CSS
   color: #969696;
 }
 
-.room-detail-meta>li>a:hover {
+.hotel-detail-meta>li>a:hover {
   color: var(--mainColor);
 }
 
-.room-detail-meta>li>a>i {
+.hotel-detail-meta>li>a>i {
   font-size: 18px;
   position: relative;
   top: 2px;
 }
 
-.room-detail-meta .share-box {
+.hotel-detail-meta .share-box {
   position: relative;
 }
 
-.room-detail-meta .share-box .share-box-social {
+.hotel-detail-meta .share-box .share-box-social {
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -6109,7 +6109,7 @@ Room Details Area CSS
   margin-left: -3px;
 }
 
-.room-detail-meta .share-box:hover .share-box-social {
+.hotel-detail-meta .share-box:hover .share-box-social {
   opacity: 1;
   visibility: visible;
   margin-bottom: 6px;
@@ -6126,7 +6126,7 @@ Room Details Area CSS
   opacity: 0.7;
 }
 
-.room-detail-meta .avatar.avatar-lg {
+.hotel-detail-meta .avatar.avatar-lg {
   width: 60px;
   height: 60px;
   -webkit-box-flex: 0;
@@ -6134,21 +6134,21 @@ Room Details Area CSS
   flex: 0 0 60px;
 }
 
-.room-detail-meta .avatar {
+.hotel-detail-meta .avatar {
   width: 50px;
   height: 50px;
   display: inline-block;
 }
 
-.room-detail-meta .agent-contact-inner .border {
+.hotel-detail-meta .agent-contact-inner .border {
   border: 1px dashed rgba(255, 255, 255, 0.2);
 }
 
-.room-detail-gallery {
+.hotel-detail-gallery {
   position: relative;
 }
 
-.room-detail-gallery .nav-tabs.nav-tabs-02 {
+.hotel-detail-gallery .nav-tabs.nav-tabs-02 {
   position: absolute;
   z-index: 8;
   top: 20px;
@@ -6156,7 +6156,7 @@ Room Details Area CSS
   border: none;
 }
 
-.room-detail-gallery .nav-tabs.nav-tabs-02 .nav-item {
+.hotel-detail-gallery .nav-tabs.nav-tabs-02 .nav-item {
   margin-right: 4px;
   margin-bottom: 0;
 }
@@ -6178,24 +6178,24 @@ Room Details Area CSS
   color: #ffffff;
 }
 
-.room-detail-gallery .slider-slick,
-.room-detail-gallery iframe,
-.room-detail-gallery #street-view {
+.hotel-detail-gallery .slider-slick,
+.hotel-detail-gallery iframe,
+.hotel-detail-gallery #street-view {
   min-height: 500px;
 }
 
-.room-list li {
+.hotel-list li {
   margin-bottom: 5px;
   font-size: 15px;
 }
 
-.room-list li b {
+.hotel-list li b {
   color: #001935;
   font-weight: 600;
   margin-right: 3px;
 }
 
-.room-list-style-2 li {
+.hotel-list-style-2 li {
   list-style: square;
 }
 
@@ -6209,19 +6209,19 @@ Room Details Area CSS
 }
 
 @media only screen and (max-width: 767px) {
-  .room-details-area .sticky-top .title {
+  .hotel-details-area .sticky-top .title {
     font-size: 20px;
   }
 
-  .room-details-area .sticky-top .price {
+  .hotel-details-area .sticky-top .price {
     font-size: 25px;
   }
 
-  .room-detail-meta>li>a {
+  .hotel-detail-meta>li>a {
     padding: 14px 12px;
   }
 
-  .room-detail-meta>li>a>i {
+  .hotel-detail-meta>li>a>i {
     font-size: 16px;
     padding-right: 4px !important;
   }
@@ -6230,53 +6230,53 @@ Room Details Area CSS
     display: block !important;
   }
 
-  .room-details-area .agent-contact-inner a.btn.btn-link {
+  .hotel-details-area .agent-contact-inner a.btn.btn-link {
     margin-top: 10px;
   }
 
-  .room-detail-gallery .slider-slick,
-  .room-detail-gallery iframe,
-  .room-detail-gallery #street-view {
+  .hotel-detail-gallery .slider-slick,
+  .hotel-detail-gallery iframe,
+  .hotel-detail-gallery #street-view {
     min-height: 200px;
   }
 
-  .room-details-area .mb-5 {
+  .hotel-details-area .mb-5 {
     margin-bottom: 1.5rem !important;
   }
 
-  .room-details-area .mt-5 {
+  .hotel-details-area .mt-5 {
     margin-top: 1.5rem !important;
   }
 
-  .room-details-area .mb-3 {
+  .hotel-details-area .mb-3 {
     margin-bottom: 0.5rem !important;
   }
 
-  ul.room-list-style-2 {
+  ul.hotel-list-style-2 {
     padding-left: 1.2rem;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .room-details-area .sticky-top .title {
+  .hotel-details-area .sticky-top .title {
     font-size: 21px;
   }
 
-  .room-details-area .mt-5 {
+  .hotel-details-area .mt-5 {
     margin-top: 2rem !important;
   }
 
-  .room-details-area .mb-5 {
+  .hotel-details-area .mb-5 {
     margin-bottom: 2rem !important;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .room-details-area .sticky-top .title {
+  .hotel-details-area .sticky-top .title {
     font-size: 22px;
   }
 
-  .room-detail-meta>li>a {
+  .hotel-detail-meta>li>a {
     padding: 14px 15px;
   }
 
@@ -6284,7 +6284,7 @@ Room Details Area CSS
     display: block !important;
   }
 
-  .room-details-area .agent-contact-inner a.btn.btn-link {
+  .hotel-details-area .agent-contact-inner a.btn.btn-link {
     margin-top: 10px;
   }
 }

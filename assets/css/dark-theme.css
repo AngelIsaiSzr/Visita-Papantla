@@ -224,20 +224,20 @@
   background-color: #121212 !important;
 }
 
-.theme-dark .room-area .room-item {
+.theme-dark .hotel-area .hotel-item {
   background-color: var(--blackColor);
 }
 
-.theme-dark .room-area .room-item .btn.style1:hover::before,
-.theme-dark .room-area .room-item .btn.style1:hover::after {
+.theme-dark .hotel-area .hotel-item .btn.style1:hover::before,
+.theme-dark .hotel-area .hotel-item .btn.style1:hover::after {
   background-color: #121212;
 }
 
-.theme-dark .room-area .room-item .btn.style2 {
+.theme-dark .hotel-area .hotel-item .btn.style2 {
   background-color: #121212;
 }
 
-.theme-dark .room-area .room-item .btn.style2:hover {
+.theme-dark .hotel-area .hotel-item .btn.style2:hover {
   background-color: var(--mainColor);
 }
 
@@ -311,19 +311,19 @@
   color: #fff !important;
 }
 
-.theme-dark .room-list li {
+.theme-dark .hotel-list li {
   color: #d3d3d3;
 }
 
-.theme-dark .room-list li b {
+.theme-dark .hotel-list li b {
   color: #fff;
 }
 
-.theme-dark .room-details-area .agent-contact-inner a.btn.btn-link:hover {
+.theme-dark .hotel-details-area .agent-contact-inner a.btn.btn-link:hover {
   color: var(--mainColor) !important;
 }
 
-.theme-dark .room-list-style-2 li {
+.theme-dark .hotel-list-style-2 li {
   color: #d3d3d3;
 }
 

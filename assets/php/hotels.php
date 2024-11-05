@@ -16,7 +16,7 @@ $result = $conn->query($sql);
 ?>
 
     <?php while($row = $result->fetch_assoc()): ?>
-        <div class="room-item shadow rounded overflow-hidden">
+        <div class="hotel-item shadow rounded overflow-hidden">
             <div class="position-relative">
                 <img class="img-fluid" src="<?php echo $row['image']; ?>" alt="">
                 <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$<?php echo $row['price']; ?> / Noche</small>
@@ -37,7 +37,7 @@ $result = $conn->query($sql);
                 </div>
                 <p class="text-body mb-3"><?php echo $row['description']; ?></p>
                 <div class="d-flex justify-content-between">
-                    <a class="btn style1 rounded py-2 px-4" href="room-details.php?id=<?php echo $row['id']; ?>">Ver Detalles</a>
+                    <a class="btn style1 rounded py-2 px-4" href="hotel-details.php?id=<?php echo $row['id']; ?>">Ver Detalles</a>
                     <a class="btn style2 rounded py-2 px-4" href="booking-form.php?id=<?php echo $row['id']; ?>">Reserva Ahora</a>
                 </div>
             </div>

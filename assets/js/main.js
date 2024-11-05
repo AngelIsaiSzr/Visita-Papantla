@@ -310,9 +310,9 @@
     });
 
     /*==================== 
-    Room Slider
+    Hotel Slider
     ======================*/
-    $('.room-slider').owlCarousel({
+    $('.hotel-slider').owlCarousel({
         loop:true,
         nav:true,
         mouseDrag:true,
