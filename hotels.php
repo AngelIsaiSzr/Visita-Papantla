@@ -1,3 +1,23 @@
+<?php
+// Conectar a la base de datos
+$host_name = 'db5016594095.hosting-data.io';
+$database = 'dbs13455695';
+$user_name = 'dbu5410004';
+$password = 'VisitaPapantla@0';
+
+$link = new mysqli($host_name, $user_name, $password, $database);
+
+if ($link->connect_error) {
+    die('<p>Error al conectar con servidor MySQL: ' . $link->connect_error . '</p>');
+}
+
+// Establecer la codificación de caracteres a utf8mb4
+$link->set_charset("utf8mb4");
+
+// Consulta para obtener los hoteles
+$sql = "SELECT * FROM hoteles";
+$result = $link->query($sql);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -183,7 +203,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="hotels.html" class="nav-link active">
+                                    <a href="hotels.php" class="nav-link active">
                                         Hoteles
                                     </a>
                                 </li>
@@ -198,7 +218,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item d-lg-none">
-                                    <a href="hotels.html" class="nav-link btn style1">Reserva Ahora</a>
+                                    <a href="hotels.php" class="nav-link btn style1">Reserva Ahora</a>
                                 </li>
                             </ul>
                             <div class="other-options md-none">
@@ -212,7 +232,7 @@
                                     </div>
                                 </div>
                                 <div class="option-item">
-                                    <a href="hotels.html" class="btn style1">Reserva Ahora</a>
+                                    <a href="hotels.php" class="btn style1">Reserva Ahora</a>
                                 </div>
                             </div>
                         </div>
@@ -271,235 +291,59 @@
                             comienza aquí!</p>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="hotel-item shadow rounded overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="assets/img/hotel/hotel-1.jpg" alt="">
-                                    <small
-                                        class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$605
-                                        / Noche</small>
-                                </div>
-                                <div class="p-4 mt-2">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <h5 class="mb-0">Hotel Tajin</h5>
-                                        <div class="ps-2">
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
+                        <?php if ($result->num_rows > 0): ?>
+                            <?php while ($row = $result->fetch_assoc()): ?>
+                                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200">
+                                    <div class="hotel-item shadow rounded overflow-hidden">
+                                        <div class="position-relative">
+                                            <img class="img-fluid" src="<?= htmlspecialchars($row['imagen']) ?>"
+                                                alt="Imagen de <?= htmlspecialchars($row['nombre']) ?>">
+                                            <small
+                                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">
+                                                $<?= number_format($row['precio'], 0) ?> / Noche
+                                            </small>
+                                        </div>
+                                        <div class="p-4 mt-2">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <h5 class="mb-0"><?= htmlspecialchars($row['nombre']) ?></h5>
+                                                <div class="ps-2">
+                                                    <?php
+                                                    $estrellas = $row['estrellas'];
+                                                    $entero = floor($estrellas); // Parte entera de las estrellas
+                                                    $decimal = $estrellas - $entero; // Parte decimal
+                                            
+                                                    // Genera estrellas llenas
+                                                    for ($i = 1; $i <= $entero; $i++): ?>
+                                                        <small class="bx bxs-star text-primary"></small>
+                                                    <?php endfor;
+
+                                                    // Genera estrella a la mitad si corresponde
+                                                    if ($decimal === 0.5): ?>
+                                                        <small class="bx bxs-star-half text-primary"></small>
+                                                    <?php elseif ($decimal > 0.5 && $entero < 5): ?>
+                                                        <small class="bx bxs-star text-primary"></small>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </div>
+                                            <div class="features d-flex mb-3">
+                                                <span class="border-end me-3 pe-3"><i
+                                                        class="bx bx-bed text-primary me-2"></i>Normal</span>
+                                                <span class="border-end me-3 pe-3"><i
+                                                        class="bx bx-bath text-primary me-2"></i>Ducha</span>
+                                                <span><i class="bx bx-wifi text-primary me-2"></i>Wifi</span>
+                                            </div>
+                                            <p class="text-body mb-3"><?= htmlspecialchars($row['descripcion']) ?></p>
+                                            <div class="d-flex justify-content-between">
+                                                <a class="btn style1 rounded py-2 px-4" href="#">Ver Detalles</a>
+                                                <a class="btn style2 rounded py-2 px-4" href="#">Reservar Ahora</a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="features d-flex mb-3">
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bed text-primary me-2"></i>Normal</span>
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bath text-primary me-2"></i>Ducha</span>
-                                        <span><i class="bx bx-wifi text-primary me-2"></i>Wifi</span>
-                                    </div>
-                                    <p class="text-body mb-3">Nuestro nombre hace referencia a la historia de la que años
-                                        atrás fueron testigos nuestras tierras.</p>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="btn style1 rounded py-2 px-4" href="#">Ver Detalles</a>
-                                        <a class="btn style2 rounded py-2 px-4" href="#">Reservar Ahora</a>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1400">
-                            <div class="hotel-item shadow rounded overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="assets/img/hotel/hotel-2.jpg" alt="">
-                                    <small
-                                        class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$320
-                                        / Noche</small>
-                                </div>
-                                <div class="p-4 mt-2">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <h5 class="mb-0">Hotel Familiar Arenas</h5>
-                                        <div class="ps-2">
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star-half text-primary"></small>
-                                        </div>
-                                    </div>
-                                    <div class="features d-flex mb-3">
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bed text-primary me-2"></i>Normal</span>
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bath text-primary me-2"></i>Ducha</span>
-                                        <span><i class="bx bx-wifi text-primary me-2"></i>Wifi</span>
-                                    </div>
-                                    <p class="text-body mb-3">El hotel se encuentra a buena distancia del centro de
-                                        Papantla, es un lugar bastante tranquilo y familiar.</p>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="btn style1 rounded py-2 px-4" href="#">Ver Detalles</a>
-                                        <a class="btn style2 rounded py-2 px-4" href="#">Reservar Ahora</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1600">
-                            <div class="hotel-item shadow rounded overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="assets/img/hotel/hotel-3.jpg" alt="">
-                                    <small
-                                        class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$540
-                                        / Noche</small>
-                                </div>
-                                <div class="p-4 mt-2">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <h5 class="mb-0">Posada Familiar</h5>
-                                        <div class="ps-2">
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                        </div>
-                                    </div>
-                                    <div class="features d-flex mb-3">
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bed text-primary me-2"></i>Normal</span>
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bath text-primary me-2"></i>Ducha</span>
-                                        <span><i class="bx bx-wifi text-primary me-2"></i>Wifi</span>
-                                    </div>
-                                    <p class="text-body mb-3">Ofrece alojamiento con jardín, parking privado gratis y
-                                        terraza. El alojamiento dispone de cocina y wifi.</p>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="btn style1 rounded py-2 px-4" href="#">Ver Detalles</a>
-                                        <a class="btn style2 rounded py-2 px-4" href="#">Reservar Ahora</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="hotel-item shadow rounded overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="assets/img/hotel/hotel-4.jpg" alt="">
-                                    <small
-                                        class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$527
-                                        / Noche</small>
-                                </div>
-                                <div class="p-4 mt-2">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <h5 class="mb-0">OYO Hotel</h5>
-                                        <div class="ps-2">
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                        </div>
-                                    </div>
-                                    <div class="features d-flex mb-3">
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bed text-primary me-2"></i>Normal</span>
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bath text-primary me-2"></i>Ducha</span>
-                                        <span><i class="bx bx-wifi text-primary me-2"></i>Wifi</span>
-                                    </div>
-                                    <p class="text-body mb-3">En el hotel, cada habitación tiene aire acondicionado y TV, y
-                                        algunas también ofrecen terraza.</p>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="btn style1 rounded py-2 px-4" href="#">Ver Detalles</a>
-                                        <a class="btn style2 rounded py-2 px-4" href="#">Reservar Ahora</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1400">
-                            <div class="hotel-item shadow rounded overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="assets/img/hotel/hotel-5.jpg" alt="">
-                                    <small
-                                        class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$340
-                                        / Noche</small>
-                                </div>
-                                <div class="p-4 mt-2">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <h5 class="mb-0">El Rincón Preferido</h5>
-                                        <div class="ps-2">
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                        </div>
-                                    </div>
-                                    <div class="features d-flex mb-3">
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bed text-primary me-2"></i>Normal</span>
-                                        <span class="border-end me-3 pe-3"><i
-                                                class="bx bx-bath text-primary me-2"></i>Ducha</span>
-                                        <span><i class="bx bx-wifi text-primary me-2"></i>Wifi</span>
-                                    </div>
-                                    <p class="text-body mb-3">Dispone de servicio de conserjería, habitaciones libres de
-                                        humo, jardín, wifi en todo el alojamiento y salón de uso común.</p>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="btn style1 rounded py-2 px-4" href="#">Ver Detalles</a>
-                                        <a class="btn style2 rounded py-2 px-4" href="#">Reservar Ahora</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1600">
-                            <div class="hotel-item shadow rounded overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="assets/img/hotel/hotel-6.jpg" alt="">
-                                    <small
-                                        class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$300
-                                        / Noche</small>
-                                </div>
-                                <div class="p-4 mt-2">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <h5 class="mb-0">Hotel Casa Blanca</h5>
-                                        <div class="ps-2">
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star-half text-primary"></small>
-                                        </div>
-                                    </div>
-                                    <div class="features d-flex mb-3">
-                                        <span class="border-end me-3 pe-3"><i class="bx bx-bed text-primary me-2"></i>Normal</span>
-                                        <span class="border-end me-3 pe-3"><i class="bx bx-bath text-primary me-2"></i>Ducha</span>
-                                        <span><i class="bx bx-wifi text-primary me-2"></i>Wifi</span>
-                                    </div>
-                                    <p class="text-body mb-3">Las habitaciones incluyen cocinita y aire acondicionado para una comodidad mucho mayor y wifi gratuito.</p>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="btn style1 rounded py-2 px-4" href="#">Ver Detalles</a>
-                                        <a class="btn style2 rounded py-2 px-4" href="#">Reservar Ahora</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="hotel-item shadow rounded overflow-hidden">
-                                <div class="position-relative">
-                                    <img class="img-fluid" src="assets/img/hotel/hotel-7.jpg" alt="">
-                                    <small
-                                        class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$400
-                                        / Noche</small>
-                                </div>
-                                <div class="p-4 mt-2">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <h5 class="mb-0">Hotel Vista Inn</h5>
-                                        <div class="ps-2">
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                            <small class="bx bxs-star text-primary"></small>
-                                        </div>
-                                    </div>
-                                    <div class="features d-flex mb-3">
-                                        <span class="border-end me-3 pe-3"><i class="bx bx-bed text-primary me-2"></i>Normal</span>
-                                        <span class="border-end me-3 pe-3"><i class="bx bx-bath text-primary me-2"></i>Ducha</span>
-                                        <span><i class="bx bx-wifi text-primary me-2"></i>Wifi</span>
-                                    </div>
-                                    <p class="text-body mb-3">Si lo que buscas es un ambiente de descanso y buena vista, el Hotel Vista Inn es el lugar perfecto.</p>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="btn style1 rounded py-2 px-4" href="#">Ver Detalles</a>
-                                        <a class="btn style2 rounded py-2 px-4" href="#">Reservar Ahora</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <?php endwhile; ?>
+                        <?php else: ?>
+                            <p>No se encontraron hoteles disponibles.</p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -704,3 +548,4 @@
 </body>
 
 </html>
+<?php $link->close(); ?>
