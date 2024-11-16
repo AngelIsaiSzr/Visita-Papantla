@@ -190,7 +190,7 @@ $result = $link->query($sql);
             <div class="header-bottom">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.php">
                             <img class="logo-light" src="assets/img/logo.png" alt="logo">
                             <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
                         </a>
@@ -200,7 +200,7 @@ $result = $link->query($sql);
                             </div>
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link">
+                                    <a href="index.php" class="nav-link">
                                         Inicio
                                     </a>
                                 </li>
@@ -274,7 +274,7 @@ $result = $link->query($sql);
                                 <nav>
                                     <ol class="breadcrumb mb-0">
                                         <li class="breadcrumb-item">
-                                            <a href="index.html">
+                                            <a href="index.php">
                                                 <i class="bx bx-home-circle"></i>
                                             </a>
                                         </li>
@@ -366,7 +366,7 @@ $result = $link->query($sql);
                     <div class="row ptb-60">
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 pe-xl-5">
                             <div class="footer-widget">
-                                <a href="index.html" class="footer-logo">
+                                <a href="index.php" class="footer-logo">
                                     <img src="assets/img/logo-dark.png" alt="Image">
                                 </a>
                                 <p class="comp-desc">
