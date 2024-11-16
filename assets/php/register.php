@@ -1,4 +1,7 @@
 <?php
+// Iniciar la sesión
+session_start();
+
 // Conectar a la base de datos
 $host_name = 'db5016594095.hosting-data.io';
 $database = 'dbs13455695';
@@ -8,7 +11,7 @@ $password = 'VisitaPapantla@0';
 $link = new mysqli($host_name, $user_name, $password, $database);
 
 if ($link->connect_error) {
-  die('<p>Error al conectar con servidor MySQL: '. $link->connect_error .'</p>');
+    die('<p>Error al conectar con servidor MySQL: ' . $link->connect_error . '</p>');
 }
 
 // Establecer la codificación de caracteres a utf8mb4
@@ -28,7 +31,7 @@ $check_email_query->store_result();
 if ($check_email_query->num_rows > 0) {
     // Si el correo ya existe
     $message = "El correo ya está registrado. Intente con otro o inicie sesión.";
-    header("Location: ../../register?message=" . urlencode($message));
+    header("Location: ../../register.php?message=" . urlencode($message));
     exit();
 }
 
@@ -42,12 +45,21 @@ $hashed_password = password_hash($contraseña, PASSWORD_BCRYPT);
 $stmt->bind_param("sss", $nombre, $correo, $hashed_password);
 
 if ($stmt->execute()) {
+    // Obtener el ID del usuario recién registrado
+    $user_id = $stmt->insert_id;
+
+    // Almacenar el estado de inicio de sesión en la sesión
+    $_SESSION['user_id'] = $user_id;
+    $_SESSION['correo'] = $correo;
+    $_SESSION['nombre'] = $nombre;
+
+    // Redirigir a la página principal o de cuenta
     $message = "Registro exitoso. ¡Bienvenido!";
-    header("Location: ../../register?message=" . urlencode($message));
+    header("Location: ../../register.php?message=" . urlencode($message));
     exit();
 } else {
     $message = "Error: " . $stmt->error;
-    header("Location: ../../register?message=" . urlencode($message));
+    header("Location: ../../register.php?message=" . urlencode($message));
     exit();
 }
 

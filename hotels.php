@@ -1,4 +1,7 @@
 <?php
+// Iniciar la sesión
+session_start();
+
 // Conectar a la base de datos
 $host_name = 'db5016594095.hosting-data.io';
 $database = 'dbs13455695';
@@ -173,7 +176,11 @@ $result = $link->query($sql);
                                 </div>
                                 <div class="user-account">
                                     <i class="ri-account-box-line"></i>
-                                    <a href="login.html">Ingresar</a>
+                                    <?php if (isset($_SESSION['user_id'])): ?>
+                                        <a href="my-account.html">Cuenta</a>
+                                    <?php else: ?>
+                                        <a href="login.php">Ingresar</a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
