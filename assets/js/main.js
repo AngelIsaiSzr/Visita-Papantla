@@ -506,7 +506,6 @@ function toggleTheme() {
     }
 })();
 
-
 // Seleccionar el campo de contraseña y el ícono
 const passwordField = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
