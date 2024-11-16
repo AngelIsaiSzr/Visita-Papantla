@@ -45,7 +45,6 @@ session_start();
 </head>
 
 <body>
-
     <!-- START PRELOADER AREA -->
     <div class="preloader-style" id="loader-style">
         <div class="preloader-wrap">
