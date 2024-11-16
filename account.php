@@ -1,9 +1,9 @@
 <?php
 session_start();
-// if (!isset($_SESSION['user_id'])) {
-//     header("Location: login.php");
-//     exit();
-// }
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
 
 $nombre = implode(' ', array_slice(explode(' ', $_SESSION['nombre']), 0, 2));
 ?>
