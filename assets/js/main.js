@@ -471,7 +471,7 @@
 
 })(jQuery);
 
-// function to set a given theme/color-scheme
+// Function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('clim_theme', themeName);
     document.documentElement.className = themeName;
@@ -486,7 +486,7 @@ function setTheme(themeName) {
     }
 }
 
-// function to toggle between light and dark theme
+// Function to toggle between light and dark theme
 function toggleTheme() {
     if (localStorage.getItem('clim_theme') === 'theme-dark') {
         setTheme('theme-light');
@@ -506,17 +506,17 @@ function toggleTheme() {
     }
 })();
 
-// Seleccionar el campo de contraseña y el ícono
+// Select the password field and the icon
 const passwordField = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
 
-// Escuchar el evento 'click' en el ícono
+// Listen for the 'click' event on the icon
 togglePassword.addEventListener('click', () => {
-    // Alternar el tipo de input entre 'password' y 'text'
+    // Toggle the input type between 'password' and 'text'
     const type = passwordField.type === 'password' ? 'text' : 'password';
     passwordField.type = type;
 
-    // Alternar el ícono entre 'bx-show' y 'bx-hide'
+    // Toggle the icon between 'bx-show' and 'bx-hide'
     togglePassword.classList.toggle('bx-show');
     togglePassword.classList.toggle('bx-hide');
 });

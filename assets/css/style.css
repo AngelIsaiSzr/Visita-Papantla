@@ -1984,6 +1984,26 @@ p:empty {
     width: 28px !important;
     height: 28px !important;
   }
+    
+  .select-lang .navbar-language .dropdown-toggle {
+    padding-left: 1px;
+  }
+
+  .select-lang .navbar-language .dropdown-menu {
+    transform: translate(-30px, 75px) !important;
+  }
+
+  .select-lang .navbar-language .dropdown-menu.show {
+    transform: translate(-30px, 40px) !important;
+  }
+
+  .user-account{
+    margin-left: 8px;
+  }
+
+  .user-account i{
+    margin-right: -1px;
+  }
 }
 
 @media only screen and (max-width: 767px) {

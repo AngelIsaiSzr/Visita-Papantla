@@ -159,7 +159,7 @@ session_start();
                                     <?php if (isset($_SESSION['user_id'])): ?>
                                         <a href="account.php">Mi Cuenta</a>
                                     <?php else: ?>
-                                        <a href="login.php">Ingresar</a>
+                                        <a href="login.php">Mi Cuenta</a>
                                     <?php endif; ?>
                                 </div>
                             </div>
