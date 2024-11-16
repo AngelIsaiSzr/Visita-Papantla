@@ -1,8 +1,14 @@
 <?php
+// Iniciar la sesión
 session_start();
+
+
 session_unset();
+
+
 session_destroy();
+
 $message = "Cierre de sesión exitoso. ¡Hasta pronto!";
-header("Location: ../../login.php?message=" . urlencode($message));
+header("Location: ../../index.php?message=" . urlencode($message)  . "&type=logout");
 exit();
 ?>

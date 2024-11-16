@@ -37,16 +37,16 @@ if ($stmt->num_rows > 0) {
         $_SESSION['user_id'] = $user_id;
         $_SESSION['correo'] = $correo;
         $message = "Inicio de sesión exitoso. ¡Bienvenido!";
-        header("Location: ../../login.php?message=" . urlencode($message));
+        header("Location: ../../index.php?message=" . urlencode($message) . "&type=login");
         exit();
     } else {
         $message = "Contraseña incorrecta.";
-        header("Location: ../../login.php?message=" . urlencode($message));
+        header("Location: ../../login.php?message=" . urlencode($message) . "&type=login");
         exit();
     }
 } else {
     $message = "No se encontró una cuenta con este correo.";
-    header("Location: ../../login.php?message=" . urlencode($message));
+    header("Location: ../../login.php?message=" . urlencode($message) . "&type=login");
     exit();
 }
 

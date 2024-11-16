@@ -55,11 +55,11 @@ if ($stmt->execute()) {
 
     // Redirigir a la página principal o de cuenta
     $message = "Registro exitoso. ¡Bienvenido!";
-    header("Location: ../../register.php?message=" . urlencode($message));
+    header("Location: ../../index.php?message=" . urlencode($message) . "&type=register");
     exit();
 } else {
     $message = "Error: " . $stmt->error;
-    header("Location: ../../register.php?message=" . urlencode($message));
+    header("Location: ../../register.php?message=" . urlencode($message) . "&type=register");
     exit();
 }
 

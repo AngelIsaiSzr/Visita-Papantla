@@ -378,11 +378,15 @@ session_start();
                         <div data-aos="fade-up" data-aos-duration="1200" class="col-lg-6 col-md-12">
                             <div class="banner-wrapper-content">
                                 <h1>Reserva, Disfruta y Vive la Magia.</h1>
-                                <p>Bienvenido a Visita Papantla, una plataforma enfocada en brindarte las mejores opciones para que tu experiencia de viaje sea memorable,
-                                     estamos totalmente comprometidos en ofrecerte los mejores servicios ubicados en nuestra localidad.</p>
-                                <p>Te proporcionamos una gama amplia de hoteles adaptándonos a tus necesidades específicas para una mayor comodidad. Por lo cual, 
-                                    nuestro equipo trabaja con dedicación y empeño para otorgar una excelente experiencia de viaje a todos y cada uno de nuestros clientes. 
-                                       </p>
+                                <p>Bienvenido a Visita Papantla, una plataforma enfocada en brindarte las mejores
+                                    opciones para que tu experiencia de viaje sea memorable,
+                                    estamos totalmente comprometidos en ofrecerte los mejores servicios ubicados en
+                                    nuestra localidad.</p>
+                                <p>Te proporcionamos una gama amplia de hoteles adaptándonos a tus necesidades
+                                    específicas para una mayor comodidad. Por lo cual,
+                                    nuestro equipo trabaja con dedicación y empeño para otorgar una excelente
+                                    experiencia de viaje a todos y cada uno de nuestros clientes.
+                                </p>
                                 <div class="btn-box">
                                     <a href="about.php" class="btn style5">Descubre Más</a>
                                 </div>
@@ -414,13 +418,14 @@ session_start();
                                         </a>
 
                                         <div class="accordion-content show">
-                                            <p>Para realizar una reservación de hotel por medio de Visita Papantla 
+                                            <p>Para realizar una reservación de hotel por medio de Visita Papantla
                                                 dirígete al menú de "Hoteles" o da click en los botones "Reserva ahora"
-                                                o "Reservar", a continuación explora los hoteles y elige el de tu 
-                                                preferencia, da click en "Detalles" del hotel que deseas, ingresa los datos solicitados
-                                                y guarda el código QR que se te habrá proporcionado para comprobar tu 
-                                                reservación al ser mostrado en tu llegada al hotel.  
-                                              </p>
+                                                o "Reservar", a continuación explora los hoteles y elige el de tu
+                                                preferencia, da click en "Detalles" del hotel que deseas, ingresa los
+                                                datos solicitados
+                                                y guarda el código QR que se te habrá proporcionado para comprobar tu
+                                                reservación al ser mostrado en tu llegada al hotel.
+                                            </p>
                                         </div>
                                     </li>
 
@@ -996,6 +1001,59 @@ session_start();
 
     </div>
     <!-- Page Wrapper End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="messageModalLabel">Mensaje</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalMessage">
+                    <!-- Aquí se mostrará el mensaje -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Capturar el mensaje y el tipo de la URL y mostrar el modal
+        document.addEventListener("DOMContentLoaded", function () {
+            const params = new URLSearchParams(window.location.search);
+            const message = params.get("message");
+            const type = params.get("type");
+
+            if (message) {
+                document.getElementById("modalMessage").innerText = decodeURIComponent(message);
+
+                // Cambiar el título del modal según el tipo
+                let title;
+                switch (type) {
+                    case "login":
+                        title = "Mensaje de Inicio de Sesión";
+                        break;
+                    case "register":
+                        title = "Mensaje de Registro";
+                        break;
+                    case "logout":
+                        title = "Mensaje de Cierre de Sesión";
+                        break;
+                    default:
+                        title = "Mensaje";
+                }
+
+                document.getElementById("messageModalLabel").innerText = title;
+
+                // Mostrar el modal
+                const messageModal = new bootstrap.Modal(document.getElementById("messageModal"));
+                messageModal.show();
+            }
+        });
+    </script>
 
     <!-- Back-to-top Button Start -->
     <a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
