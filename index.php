@@ -1,5 +1,24 @@
 <?php
 session_start();
+include 'assets/config/db.php';
+
+// Realizar la consulta para obtener los nombres de los hoteles
+$sql = "SELECT id_hotel, nombre FROM hoteles";
+$result = $link->query($sql);
+
+// Verificar si hay resultados
+if ($result->num_rows > 0) {
+    // Crear el array de opciones
+    $hoteles = [];
+    while ($row = $result->fetch_assoc()) {
+        $hoteles[] = $row;
+    }
+} else {
+    $hoteles = [];
+}
+
+// Cerrar la conexión
+$link->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,7 +95,7 @@ session_start();
     <div class="page-wrapper">
 
         <!-- Header Section Start -->
-        <?php include 'assets/inc/header.php'; ?>
+        <?php include_once 'assets/inc/header.php'; ?>
         <!-- Header Section End -->
 
         <!-- Main Wrapper Start -->
@@ -135,18 +154,14 @@ session_start();
                                 <div class="row g-2">
                                     <div class="col-xl-2 col-lg-4 col-md-4">
                                         Hotel:
-                                        <select class="form-control">
+                                        <select class="form-control" name="hotel">
                                             <option selected>Hotel</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
+                                            <?php
+                                            // Generar las opciones del select con los nombres de los hoteles
+                                            foreach ($hoteles as $hotel) {
+                                                echo '<option value="' . htmlspecialchars($hotel['id_hotel']) . '">' . htmlspecialchars($hotel['nombre']) . '</option>';
+                                            }
+                                            ?>
                                         </select>
                                     </div>
                                     <div class="col-xl-3 col-lg-6 col-md-6">

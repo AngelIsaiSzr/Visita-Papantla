@@ -96,7 +96,7 @@ $result = $link->query($sql);
     <div class="page-wrapper">
 
         <!-- Header Section Start -->
-        <?php include 'assets/inc/header.php'; ?>
+        <?php include_once 'assets/inc/header.php'; ?>
         <!-- Header Section End -->
 
         <!-- Main Wrapper Start -->
