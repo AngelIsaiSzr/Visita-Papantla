@@ -117,7 +117,7 @@
                             <li>
                                 <i class="bx bx-location-plus"></i>
                                 <h6>Ubicación</h6>
-                                <p>Papantla de Olarte, Veracruz, MX.</p>
+                                <p><a>Papantla de Olarte, Veracruz, MX.</a></p>
                             </li>
                             <li>
                                 <i class="bx bx-envelope"></i>
