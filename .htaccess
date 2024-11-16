@@ -5,3 +5,4 @@ ErrorDocument 302 /404.php
 ErrorDocument 400 /404.php
 ErrorDocument 403 /404.php
 ErrorDocument 500 /404.php
+ErrorDocument 505 /404.php
