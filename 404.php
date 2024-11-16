@@ -250,15 +250,15 @@ session_start();
                     <div class="row">
                         <div class="col-12">
                             <div class="breadscrumb-contain">
-                                <h2>Iniciar Sesión</h2>
+                                <h2>Página de Error 404</h2>
                                 <nav>
                                     <ol class="breadcrumb mb-0">
                                         <li class="breadcrumb-item">
-                                            <a href="index.php">
+                                            <a href="index.html">
                                                 <i class="bx bx-home-circle"></i>
                                             </a>
                                         </li>
-                                        <li class="breadcrumb-item active" aria-current="page">Iniciar Sesión</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Página de Error 404</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -268,37 +268,22 @@ session_start();
             </section>
             <!-- Breadscrumb Section End -->
 
-            <!-- Login Section Start -->
-            <div class="my-account-area ptb-60">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="custom-card">
-                                <h2 class="section-title title">Iniciar Sesión</h2>
-                                <form action="assets/php/login.php" name="login-form" method="POST">
-                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
-                                    <input type="password" class="form-control" name="password" placeholder="Contraseña"
-                                        required>
-                                    <div class="form-check d-flex justify-content-between">
-                                        <div>
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckChecked1">
-                                            <label class="form-check-label" for="flexCheckChecked1">
-                                                Recordar la contraseña
-                                            </label>
-                                        </div>
-                                        <a href="#" class="forgot-password">Olvidé mi contraseña</a>
-                                    </div>
-                                    <button class="blue-btn mx-auto d-block">Ingresar</button>
-                                    <p class="register-link text-center mt-3">¿No tienes cuenta? <a
-                                            href="register.php">Regístrate</a></p>
-                                </form>
-                            </div>
-                        </div>
+            <!-- Start 404 Page Area -->
+            <section class="page-error-area ptb-60">
+                <div class="container-fluid">
+                    <div class="page-error-content">
+                        <img src="assets/img/error.png" alt="image" data-aos="fade-up" data-aos-duration="1200">
+                        <h3 data-aos="fade-up" data-aos-duration="1400">Error 404: Página no encontrada</h3>
+                        <p data-aos="fade-up" data-aos-duration="1600">Es posible que la página que estás buscando haya
+                            sido eliminada, haya cambiado de nombre o no esté disponible temporalmente.</p>
+                        <a data-aos="fade-up" data-aos-duration="1800" href="index.php" class="btn style3 icon">
+                            <i class='bx bx-home-circle'></i>
+                            Volver al Inicio
+                        </a>
                     </div>
                 </div>
-            </div>
-            <!-- Login Section End -->
+            </section>
+            <!-- End 404 Page Area  -->
 
         </div>
         <!-- Main Wrapper End -->
@@ -478,41 +463,6 @@ session_start();
         <!-- Footer Section End -->
 
     </div>
-    <!-- Page Wrapper End -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="messageModalLabel">Mensaje de Inicio de Sesión</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="modalMessage">
-                    <!-- Aquí se mostrará el mensaje -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Capturar el mensaje y el tipo de la URL y mostrar el modal
-        document.addEventListener("DOMContentLoaded", function () {
-            const params = new URLSearchParams(window.location.search);
-            const message = params.get("message");
-
-            if (message) {
-                document.getElementById("modalMessage").innerText = decodeURIComponent(message);
-
-                // Mostrar el modal
-                var messageModal = new bootstrap.Modal(document.getElementById("messageModal"));
-                messageModal.show();
-            }
-        });
-    </script>
 
     <!-- Back-to-top Button Start -->
     <a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
