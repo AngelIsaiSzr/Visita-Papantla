@@ -1,10 +1,10 @@
 (function ($) {
     "use strict";
-    
+
     /*====================
     PRELOADER JS
     ======================*/
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         $('.preloader-style').fadeOut();
     });
 
@@ -16,7 +16,7 @@
             loop: true,
             nav: true,
             navText: [
-                "<i class='bx bx-chevron-left'></i>", 
+                "<i class='bx bx-chevron-left'></i>",
                 "<i class='bx bx-chevron-right'></i>"],
             dots: false,
             autoplay: true,
@@ -40,12 +40,12 @@
             },
         });
     }
-    
+
     // Open Search Box
-    $('.searchbtn').on('click', function() {
+    $('.searchbtn').on('click', function () {
         $('.search-area').toggleClass('open');
     });
-    $('.close-searchbox').on('click', function() {
+    $('.close-searchbox').on('click', function () {
         $('.search-area').removeClass('open');
     });
 
@@ -74,14 +74,14 @@
     });
 
     // Responsive Menu
-    $(window).on('resize', function() {
-        if($(window).width() <= 1199) {
+    $(window).on('resize', function () {
+        if ($(window).width() <= 1199) {
             $('.collapse.navbar-collapse').removeClass('collapse');
-        }else{
+        } else {
             $('.navbar-collapse').addClass('collapse');
         }
     });
-    $('.mobile-menu a').on('click', function() {
+    $('.mobile-menu a').on('click', function () {
         $('.main-menu-wrap').addClass('open');
         $('.collapse.navbar-collapse').removeClass('collapse');
     });
@@ -101,7 +101,7 @@
         $('.header-top').removeClass('open')
     });
     var $offcanvasNav = $('.navbar-nav'),
-    $offcanvasNavSubMenu = $offcanvasNav.find('.dropdown-menu');
+        $offcanvasNavSubMenu = $offcanvasNav.find('.dropdown-menu');
     $offcanvasNavSubMenu.parent().prepend('<span class="menu-expand"><i class="ri-arrow-down-s-line"></i></span>');
     $offcanvasNavSubMenu.slideUp();
     $offcanvasNav.on('click', 'li a, li .menu-expand', function (e) {
@@ -125,9 +125,9 @@
     /*====================
     ODOMETER JS
     ======================*/
-    $('.odometer').appear(function(e) {
+    $('.odometer').appear(function (e) {
         var odo = $(".odometer");
-        odo.each(function() {
+        odo.each(function () {
             var countNumber = $(this).attr("data-count");
             $(this).html(countNumber);
         });
@@ -149,7 +149,7 @@
     AOS.init({
         duration: 1200,
         once: true,
-        disable: function() {
+        disable: function () {
             var maxWidth = 991;
             return window.innerWidth < maxWidth;
         }
@@ -158,7 +158,7 @@
     /*====================
     FAQ Accordion JS
     ======================*/
-    $('.accordion').find('.accordion-title').on('click', function(){
+    $('.accordion').find('.accordion-title').on('click', function () {
         // Adds Active Class
         $(this).toggleClass('active');
         // Expand or Collapse This Panel
@@ -166,7 +166,7 @@
         // Hide The Other Panels
         $('.accordion-content').not($(this).next()).slideUp('fast');
         // Removes Active Class From Other Titles
-        $('.accordion-title').not($(this)).removeClass('active');       
+        $('.accordion-title').not($(this)).removeClass('active');
     });
 
     // Contact Form Script
@@ -192,7 +192,7 @@
             message.fadeOut();
         }, 6000);
     }
-    
+
     form.submit(function (e) {
         e.preventDefault();
         form_data = $(this).serialize();
@@ -201,10 +201,10 @@
             url: form.attr('action'),
             data: form_data
         })
-        .done(done_func)
-        .fail(fail_func);
+            .done(done_func)
+            .fail(fail_func);
     });
-    
+
     var form2 = $('.subscribe__form'),
         message2 = $('.subscribe__msg'),
         form_data2;
@@ -236,10 +236,10 @@
             url: form2.attr('action'),
             data: form_data2
         })
-        .done(done_func2)
-        .fail(fail_func2);
+            .done(done_func2)
+            .fail(fail_func2);
     });
-    
+
     // Testimonial Slider
     $('.testimonial-slider').owlCarousel({
         nav: true,
@@ -256,55 +256,55 @@
                 items: 1
             },
             768: {
-                items:2,
-                margin:30
+                items: 2,
+                margin: 30
             },
             992: {
-                items:3,
-                margin:40
+                items: 3,
+                margin: 40
             },
-            1200:{
-                items:3,
-                margin:40
+            1200: {
+                items: 3,
+                margin: 40
             }
         }
     });
-    
+
     /*==================== 
     Team Slider
     ======================*/
     $('.team-slider').owlCarousel({
-        loop:true,
-        nav:false,
-        mouseDrag:true,
-        items:1,
-        dots:true,
-        autoplay:false,
-        smartSpeed:1500,
-        autoplayHoverPause:true,
-        center:false,
+        loop: true,
+        nav: false,
+        mouseDrag: true,
+        items: 1,
+        dots: true,
+        autoplay: false,
+        smartSpeed: 1500,
+        autoplayHoverPause: true,
+        center: false,
         navText: [
             "<i class='bx bx-chevrons-left'></i>",
             "<i class='bx bx-chevrons-right'></i>"
         ],
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2,
-                margin:30
+            768: {
+                items: 2,
+                margin: 30
             },
-            992:{
-                items:4,
-                margin:40
+            992: {
+                items: 4,
+                margin: 40
             },
-            1200:{
-                items:4,
-                margin:40
+            1200: {
+                items: 4,
+                margin: 40
             }
         }
     });
@@ -313,37 +313,37 @@
     Hotel Slider
     ======================*/
     $('.hotel-slider').owlCarousel({
-        loop:true,
-        nav:true,
-        mouseDrag:true,
-        items:1,
-        dots:true,
-        autoplay:false,
-        smartSpeed:1500,
-        autoplayHoverPause:true,
-        center:false,
+        loop: true,
+        nav: true,
+        mouseDrag: true,
+        items: 1,
+        dots: true,
+        autoplay: false,
+        smartSpeed: 1500,
+        autoplayHoverPause: true,
+        center: false,
         navText: [
             "<i class='bx bx-chevron-left'></i>",
             "<i class='bx bx-chevron-right'></i>"
         ],
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2,
-                margin:0
+            768: {
+                items: 2,
+                margin: 0
             },
-            992:{
-                items:3,
-                margin:0
+            992: {
+                items: 3,
+                margin: 0
             },
-            1200:{
-                items:3,
-                margin:0
+            1200: {
+                items: 3,
+                margin: 0
             }
         }
     });
@@ -352,37 +352,37 @@
     Blog Slider
     ======================*/
     $('.blog-slider').owlCarousel({
-        loop:true,
-        nav:false,
-        mouseDrag:true,
-        items:1,
-        dots:true,
-        autoplay:false,
-        smartSpeed:1500,
-        autoplayHoverPause:true,
-        center:false,
+        loop: true,
+        nav: false,
+        mouseDrag: true,
+        items: 1,
+        dots: true,
+        autoplay: false,
+        smartSpeed: 1500,
+        autoplayHoverPause: true,
+        center: false,
         navText: [
             "<i class='bx bx-chevrons-left'></i>",
             "<i class='bx bx-chevrons-right'></i>"
         ],
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2,
-                margin:30
+            768: {
+                items: 2,
+                margin: 30
             },
-            992:{
-                items:3,
-                margin:40
+            992: {
+                items: 3,
+                margin: 40
             },
-            1200:{
-                items:3,
-                margin:40
+            1200: {
+                items: 3,
+                margin: 40
             }
         }
     });
@@ -414,8 +414,8 @@
     ======================*/
     $('.popup-btn').magnificPopup({
         type: 'image',
-        gallery:{
-            enabled:true
+        gallery: {
+            enabled: true
         }
     });
 
@@ -428,7 +428,7 @@
         arrows: true,
         asNavFor: '.slider-nav'
     });
-    
+
     $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -450,19 +450,19 @@
             active: true,
             smartSpeed: 1000,
             autoplay: 5000,
-            navText: [ '<span class="bx bx-chevron-left"></span>', '<span class="bx bx-chevron-right"></span>' ],
-            responsive:{
-                0:{
-                    items:1
+            navText: ['<span class="bx bx-chevron-left"></span>', '<span class="bx bx-chevron-right"></span>'],
+            responsive: {
+                0: {
+                    items: 1
                 },
-                600:{
-                    items:1
+                600: {
+                    items: 1
                 },
-                800:{
-                    items:1
+                800: {
+                    items: 1
                 },
-                1024:{
-                    items:1
+                1024: {
+                    items: 1
                 }
             }
         });
@@ -471,15 +471,19 @@
 
 })(jQuery);
 
-$(document).ready(function () {
-    $('#togglePassword').on('click', function () {
-        const passwordField = $('#password');
-        const type = passwordField.attr('type') === 'password' ? 'text' : 'password';
-        passwordField.attr('type', type);
+// Seleccionar el campo de contraseña y el ícono
+const passwordField = document.getElementById('password');
+const togglePassword = document.getElementById('togglePassword');
 
-        // Alternar el ícono
-        $(this).toggleClass('bx-show bx-hide');
-    });
+// Escuchar el evento 'click' en el ícono
+togglePassword.addEventListener('click', () => {
+    // Alternar el tipo de input entre 'password' y 'text'
+    const type = passwordField.type === 'password' ? 'text' : 'password';
+    passwordField.type = type;
+
+    // Alternar el ícono entre 'bx-show' y 'bx-hide'
+    togglePassword.classList.toggle('bx-show');
+    togglePassword.classList.toggle('bx-hide');
 });
 
 // function to set a given theme/color-scheme

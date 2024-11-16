@@ -5109,6 +5109,35 @@ My Account Area CSS
   margin-bottom: 20px;
 }
 
+.my-account-area .input-group {
+  position: relative;
+}
+
+.my-account-area .input-group input {
+  padding-right: 45px;
+}
+
+.my-account-area .input-group .input-group-text {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.my-account-area .input-group .input-group-text:hover {
+  color: var(--mainColor); 
+}
+
+.my-account-area .input-group .bx {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 767px) {
   .my-account-area .col-lg-6 .custom-card {
     margin-bottom: 20px;

@@ -277,8 +277,15 @@ session_start();
                                 <h2 class="section-title title">Iniciar Sesión</h2>
                                 <form action="assets/php/login.php" name="login-form" method="POST">
                                     <input type="email" class="form-control" name="email" placeholder="Correo" required>
-                                    <input type="password" class="form-control" name="password" placeholder="Contraseña"
-                                        required minlength="8">
+                                    
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="password" name="password"
+                                            placeholder="Contraseña" required minlength="8">
+                                        <span class="input-group-text">
+                                            <i class="bx bx-show cursor-pointer" id="togglePassword"></i>
+                                        </span>
+                                    </div>
+
                                     <div class="form-check d-flex justify-content-between">
                                         <div>
                                             <input class="form-check-input" type="checkbox" value=""
