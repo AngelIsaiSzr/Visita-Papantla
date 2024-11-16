@@ -129,7 +129,7 @@ session_start();
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
                                         <label class="form-check-label pb-10" for="flexCheckChecked2">
-                                            Acepto la <a href="privacy-policy.html">politica de privacidad</a>.
+                                            Acepto la <a>politica de privacidad</a>.
                                         </label>
                                     </div>
                                     <button class="blue-btn mx-auto d-block">Registrarse</button>

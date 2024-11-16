@@ -45,6 +45,13 @@ if ($stmt->num_rows > 0) {
         $_SESSION['correo'] = $correo;
         $_SESSION['nombre'] = $nombre;
 
+        // Si el checkbox "Recordar contraseña" está marcado, guardar el correo en una cookie
+        if (isset($_POST['remember'])) {
+            setcookie('email', $correo, time() + (30 * 24 * 60 * 60), "/");  // La cookie expirará en 30 días
+        } else {
+            setcookie('email', '', time() - 3600, "/");  // Eliminar la cookie si no está marcada
+        }
+
         // Redirigir al inicio con un mensaje de éxito
         $message = "Inicio de sesión exitoso. ¡Bienvenido!";
         header("Location: ../../index.php?message=" . urlencode($message) . "&type=login");

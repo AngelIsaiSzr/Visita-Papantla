@@ -114,8 +114,10 @@ session_start();
                             <div class="custom-card">
                                 <h2 class="section-title title">Iniciar Sesión</h2>
                                 <form action="assets/process/login.php" name="login-form" method="POST">
-                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
-                                    
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Correo" required
+                                        value="<?php echo isset($_COOKIE['email']) ? htmlspecialchars($_COOKIE['email']) : ''; ?>">
+
                                     <div class="input-group">
                                         <input type="password" class="form-control" id="password" name="password"
                                             placeholder="Contraseña" required minlength="8">
@@ -126,9 +128,9 @@ session_start();
 
                                     <div class="form-check d-flex justify-content-between">
                                         <div>
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckChecked1">
-                                            <label class="form-check-label" for="flexCheckChecked1">
+                                            <input class="form-check-input" type="checkbox" name="remember"
+                                                id="remember">
+                                            <label class="form-check-label" for="remember">
                                                 Recordar la contraseña
                                             </label>
                                         </div>
