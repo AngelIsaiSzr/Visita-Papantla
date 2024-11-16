@@ -120,7 +120,8 @@ session_start();
 
                                     <div class="input-group">
                                         <input type="password" class="form-control" id="password" name="password"
-                                            placeholder="Contraseña" required minlength="8">
+                                            placeholder="Contraseña" required minlength="8"
+                                            value="<?php echo isset($_COOKIE['password']) ? htmlspecialchars($_COOKIE['password']) : ''; ?>">
                                         <span class="input-group-text">
                                             <i class="bx bx-show cursor-pointer" id="togglePassword"></i>
                                         </span>

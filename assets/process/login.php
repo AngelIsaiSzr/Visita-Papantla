@@ -45,11 +45,13 @@ if ($stmt->num_rows > 0) {
         $_SESSION['correo'] = $correo;
         $_SESSION['nombre'] = $nombre;
 
-        // Si el checkbox "Recordar contraseña" está marcado, guardar el correo en una cookie
+        // Si el checkbox "Recordar contraseña" está marcado, guardar los datos en una cookie
         if (isset($_POST['remember'])) {
-            setcookie('email', $correo, time() + (30 * 24 * 60 * 60), "/");  // La cookie expirará en 30 días
+            setcookie('email', $correo, time() + (30 * 24 * 60 * 60), "/");
+            setcookie('password', $contraseña, time() + (30 * 24 * 60 * 60), "/");  
         } else {
-            setcookie('email', '', time() - 3600, "/");  // Eliminar la cookie si no está marcada
+            setcookie('email', '', time() - 3600, "/");
+            setcookie('password', '', time() - 3600, "/");
         }
 
         // Redirigir al inicio con un mensaje de éxito
