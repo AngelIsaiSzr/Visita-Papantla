@@ -155,7 +155,7 @@ session_start();
                                 <div class="user-account">
                                     <i class="ri-account-box-line"></i>
                                     <?php if (isset($_SESSION['user_id'])): ?>
-                                        <a href="account.php">Cuenta</a>
+                                        <a href="account.php">Mi Cuenta</a>
                                     <?php else: ?>
                                         <a href="login.php">Ingresar</a>
                                     <?php endif; ?>
@@ -266,7 +266,7 @@ session_start();
             </section>
             <!-- Breadscrumb Section End -->
 
-            <!-- Mi Cuenta Section Start -->
+            <!-- Register Section Start -->
             <div class="my-account-area ptb-60">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -293,7 +293,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            <!-- Mi Cuenta Section End -->
+            <!-- Register Section End -->
 
         </div>
         <!-- Main Wrapper End -->

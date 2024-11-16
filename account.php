@@ -19,14 +19,16 @@ if (!isset($_SESSION['user_id'])) {
     <meta name="title" content="Visita Papantla">
     <meta name="description"
         content="¡Bienvenido a Visita Papantla! - Una plataforma intuitiva dedicada a facilitar las reservaciones de hoteles en Papantla, Veracruz">
-    <meta name="keywords" content="Visita Papantla, Papantla, Hotel, Hoteles, Reservaciones, Reservar, Visitar, Conocer">
+    <meta name="keywords"
+        content="Visita Papantla, Papantla, Hotel, Hoteles, Reservaciones, Reservar, Visitar, Conocer">
     <meta name="robots" content="index,follow">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="visitapapantla.com">
     <meta property="og:title" content="Visita Papantla">
     <meta property="og:description" content="¡Bienvenido a Visita Papantla!">
-    <meta property="og:image" content="https://raw.githubusercontent.com/AngelIsaiSzr/Resources/refs/heads/main/images/Visita%20Papantla.png">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/AngelIsaiSzr/Resources/refs/heads/main/images/Visita%20Papantla.png">
 
     <!-- Icon -->
     <link rel="icon" type="image/png" href="assets/img/icon.png">
@@ -159,7 +161,7 @@ if (!isset($_SESSION['user_id'])) {
                                 <div class="user-account">
                                     <i class="ri-account-box-line"></i>
                                     <?php if (isset($_SESSION['user_id'])): ?>
-                                        <a href="account.php">Cuenta</a>
+                                        <a href="account.php">Mi Cuenta</a>
                                     <?php else: ?>
                                         <a href="login.php">Ingresar</a>
                                     <?php endif; ?>
@@ -270,51 +272,14 @@ if (!isset($_SESSION['user_id'])) {
             </section>
             <!-- Breadscrumb Section End -->
 
-            <!-- Mi Cuenta Section Start -->
+            <!-- My Account Section Start -->
             <div class="my-account-area ptb-60">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="custom-card">
-                                <h2 class="section-title title">Iniciar Sesión</h2>
-                                <form action="assets/php/login.php" name="login-form" method="POST">
-                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
-                                    <input type="password" class="form-control" name="password" placeholder="Contraseña"
-                                        required>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
-                                        <label class="form-check-label" for="flexCheckChecked1">
-                                            Recordar la contraseña
-                                        </label>
-                                    </div>
-                                    <button class="blue-btn">Ingresar</button>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="custom-card">
-                                <h2 class="section-title title">Registrarse</h2>
-                                <form action="assets/php/register.php" name="register-form" method="POST">
-                                    <input type="text" class="form-control" name="name" placeholder="Nombre completo"
-                                        Required>
-                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
-                                    <input type="password" class="form-control" name="password" placeholder="Contraseña"
-                                        required>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
-                                        <label class="form-check-label" for="flexCheckChecked2">
-                                            Acepto la <a href="privacy-policy.html">politica de privacidad</a>.
-                                        </label>
-                                    </div>
-                                    <button class="blue-btn">Registrarse</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    <h2>Bienvenido, <?php echo htmlspecialchars($_SESSION['correo']); ?></h2>
+                    <a href="logout.php">Cerrar sesión</a>
                 </div>
             </div>
-            <!-- Mi Cuenta Section End -->
+            <!-- My Account Section End -->
 
         </div>
         <!-- Main Wrapper End -->
