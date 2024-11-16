@@ -118,10 +118,12 @@ $nombre = implode(' ', array_slice(explode(' ', $_SESSION['nombre']), 0, 2));
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-md-10 col-sm-12 col-12">
                             <div class="custom-card p-4 shadow">
-                                <h2 class="section-title title">Bienvenid@,
-                                    <?php echo htmlspecialchars($nombre); ?></h2>
+                                <h2 class="section-title title">Bienvenido,
+                                    <?php echo htmlspecialchars($nombre); ?>
+                                </h2>
                                 <div class="user-info text-center mb-4">
-                                    <p class="user-email text-muted"><?php echo htmlspecialchars($_SESSION['correo']); ?>
+                                    <p class="user-email text-muted">
+                                        <?php echo htmlspecialchars($_SESSION['correo']); ?>
                                     </p>
                                 </div>
                                 <div class="account-options">

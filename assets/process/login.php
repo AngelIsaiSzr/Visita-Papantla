@@ -11,7 +11,7 @@ $password = 'VisitaPapantla@0';
 $link = new mysqli($host_name, $user_name, $password, $database);
 
 if ($link->connect_error) {
-  die('<p>Error al conectar con servidor MySQL: '. $link->connect_error .'</p>');
+    die('<p>Error al conectar con servidor MySQL: '. $link->connect_error .'</p>');
 }
 
 // Establecer la codificación de caracteres a utf8mb4
@@ -33,24 +33,37 @@ if ($stmt->num_rows > 0) {
     $stmt->fetch();
 
     if (password_verify($contraseña, $hashed_password)) {
-        // Almacenar el estado de inicio de sesión en la sesión
+        // Obtener el nombre del usuario
+        $stmt_nombre = $link->prepare("SELECT nombre FROM usuarios WHERE id_usuario = ?");
+        $stmt_nombre->bind_param("i", $user_id);
+        $stmt_nombre->execute();
+        $stmt_nombre->bind_result($nombre);
+        $stmt_nombre->fetch();
+
+        // Almacenar los datos del usuario en la sesión
         $_SESSION['user_id'] = $user_id;
         $_SESSION['correo'] = $correo;
+        $_SESSION['nombre'] = $nombre;
+
+        // Redirigir al inicio con un mensaje de éxito
         $message = "Inicio de sesión exitoso. ¡Bienvenido!";
         header("Location: ../../index.php?message=" . urlencode($message) . "&type=login");
         exit();
     } else {
+        // Contraseña incorrecta
         $message = "Contraseña incorrecta.";
         header("Location: ../../login.php?message=" . urlencode($message) . "&type=login");
         exit();
     }
 } else {
+    // No se encontró un usuario con este correo
     $message = "No se encontró una cuenta con este correo.";
     header("Location: ../../login.php?message=" . urlencode($message) . "&type=login");
     exit();
 }
 
-// Cerrar la conexión
+// Cerrar las conexiones
 $stmt->close();
+if (isset($stmt_nombre)) $stmt_nombre->close();
 $link->close();
 ?>
