@@ -471,21 +471,6 @@
 
 })(jQuery);
 
-// Seleccionar el campo de contraseña y el ícono
-const passwordField = document.getElementById('password');
-const togglePassword = document.getElementById('togglePassword');
-
-// Escuchar el evento 'click' en el ícono
-togglePassword.addEventListener('click', () => {
-    // Alternar el tipo de input entre 'password' y 'text'
-    const type = passwordField.type === 'password' ? 'text' : 'password';
-    passwordField.type = type;
-
-    // Alternar el ícono entre 'bx-show' y 'bx-hide'
-    togglePassword.classList.toggle('bx-show');
-    togglePassword.classList.toggle('bx-hide');
-});
-
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('clim_theme', themeName);
@@ -512,22 +497,27 @@ function toggleTheme() {
 
 // Immediately invoked function to set the theme on initial load
 (function () {
-    // Check if there's a saved theme in localStorage
-    const savedTheme = localStorage.getItem('clim_theme');
-    
-    if (savedTheme) {
-        // If a theme is stored, apply it
-        setTheme(savedTheme);
+    if (localStorage.getItem('clim_theme') === 'theme-dark') {
+        setTheme('theme-dark');
+        document.getElementById('slider').checked = false;
     } else {
-        // If no theme is stored, set the default theme (theme-light)
         setTheme('theme-light');
-    }
-
-    // Adjust the state of the toggle (slider)
-    const themeSlider = document.getElementById('slider');
-    if (savedTheme === 'theme-dark') {
-        themeSlider.checked = false;
-    } else {
-        themeSlider.checked = true;
+        document.getElementById('slider').checked = true;
     }
 })();
+
+
+// Seleccionar el campo de contraseña y el ícono
+const passwordField = document.getElementById('password');
+const togglePassword = document.getElementById('togglePassword');
+
+// Escuchar el evento 'click' en el ícono
+togglePassword.addEventListener('click', () => {
+    // Alternar el tipo de input entre 'password' y 'text'
+    const type = passwordField.type === 'password' ? 'text' : 'password';
+    passwordField.type = type;
+
+    // Alternar el ícono entre 'bx-show' y 'bx-hide'
+    togglePassword.classList.toggle('bx-show');
+    togglePassword.classList.toggle('bx-hide');
+});
