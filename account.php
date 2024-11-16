@@ -276,7 +276,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="my-account-area ptb-60">
                 <div class="container">
                     <h2>Bienvenido, <?php echo htmlspecialchars($_SESSION['correo']); ?></h2>
-                    <a href="logout.php">Cerrar sesión</a>
+                    <a href="assets/php/logout.php">Cerrar sesión</a>
                 </div>
             </div>
             <!-- My Account Section End -->
