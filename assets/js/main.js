@@ -471,6 +471,17 @@
 
 })(jQuery);
 
+$(document).ready(function () {
+    $('#togglePassword').on('click', function () {
+        const passwordField = $('#password');
+        const type = passwordField.attr('type') === 'password' ? 'text' : 'password';
+        passwordField.attr('type', type);
+
+        // Alternar el ícono
+        $(this).toggleClass('bx-show bx-hide');
+    });
+});
+
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
     localStorage.setItem('clim_theme', themeName);

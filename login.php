@@ -278,7 +278,7 @@ session_start();
                                 <form action="assets/php/login.php" name="login-form" method="POST">
                                     <input type="email" class="form-control" name="email" placeholder="Correo" required>
                                     <input type="password" class="form-control" name="password" placeholder="Contraseña"
-                                        required>
+                                        required minlength="8">
                                     <div class="form-check d-flex justify-content-between">
                                         <div>
                                             <input class="form-check-input" type="checkbox" value=""

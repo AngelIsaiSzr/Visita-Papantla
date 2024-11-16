@@ -15,14 +15,16 @@ session_start();
     <meta name="title" content="Visita Papantla">
     <meta name="description"
         content="¡Bienvenido a Visita Papantla! - Una plataforma intuitiva dedicada a facilitar las reservaciones de hoteles en Papantla, Veracruz">
-    <meta name="keywords" content="Visita Papantla, Papantla, Hotel, Hoteles, Reservaciones, Reservar, Visitar, Conocer">
+    <meta name="keywords"
+        content="Visita Papantla, Papantla, Hotel, Hoteles, Reservaciones, Reservar, Visitar, Conocer">
     <meta name="robots" content="index,follow">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="visitapapantla.com">
     <meta property="og:title" content="Visita Papantla">
     <meta property="og:description" content="¡Bienvenido a Visita Papantla!">
-    <meta property="og:image" content="https://raw.githubusercontent.com/AngelIsaiSzr/Resources/refs/heads/main/images/Visita%20Papantla.png">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/AngelIsaiSzr/Resources/refs/heads/main/images/Visita%20Papantla.png">
 
     <!-- Icon -->
     <link rel="icon" type="image/png" href="assets/img/icon.png">
@@ -275,10 +277,17 @@ session_start();
                                 <h2 class="section-title title">Registrarse</h2>
                                 <form action="assets/php/register.php" name="register-form" method="POST">
                                     <input type="text" class="form-control" name="name" placeholder="Nombre completo"
-                                        Required>
-                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
-                                    <input type="password" class="form-control" name="password" placeholder="Contraseña"
                                         required>
+                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
+
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="password" name="password"
+                                            placeholder="Contraseña" required minlength="8">
+                                        <span class="input-group-text">
+                                            <i class="bx bx-show cursor-pointer" id="togglePassword"></i>
+                                        </span>
+                                    </div>
+
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
                                         <label class="form-check-label pb-10" for="flexCheckChecked2">
@@ -286,7 +295,8 @@ session_start();
                                         </label>
                                     </div>
                                     <button class="blue-btn mx-auto d-block">Registrarse</button>
-                                    <p class="register-link text-center mt-3">¿Ya tienes una cuenta? <a href="login.php">Inicia Sesión</a></p>
+                                    <p class="register-link text-center mt-3">¿Ya tienes una cuenta? <a
+                                            href="login.php">Inicia Sesión</a></p>
                                 </form>
                             </div>
                         </div>
@@ -294,6 +304,7 @@ session_start();
                 </div>
             </div>
             <!-- Register Section End -->
+
 
         </div>
         <!-- Main Wrapper End -->
