@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'assets/config/db.php';
+require '../config/db.php';
 
 // Obtener datos del formulario
 $correo = $_POST['email'];
