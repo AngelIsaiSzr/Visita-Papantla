@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -151,7 +158,11 @@
                                 </div>
                                 <div class="user-account">
                                     <i class="ri-account-box-line"></i>
-                                    <a href="login.html">Ingresar</a>
+                                    <?php if (isset($_SESSION['user_id'])): ?>
+                                        <a href="account.php">Cuenta</a>
+                                    <?php else: ?>
+                                        <a href="login.php">Ingresar</a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
