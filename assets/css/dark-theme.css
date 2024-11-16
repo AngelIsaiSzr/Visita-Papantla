@@ -507,11 +507,27 @@
   color: var(--blackColor) !important;
 }
 
+.theme-dark .my-account-area .custom-card .list-group-item {
+  background-color: #666666 !important;
+}
+
+.theme-dark .my-account-area .custom-card span {
+  color: var(--whiteColor) !important;
+}
+
+.theme-dark .my-account-area .custom-card .logout a {
+  background-color: var(--mainColor);
+}
+
+.theme-dark .my-account-area .custom-card .logout a:hover {
+  background-color: var(--secondaryColor);
+}
+
 .theme-dark .my-account-area .custom-card {
   background-color: var(--blackColor);
 }
 
-.theme-dark .my-account-area .custom-card a {
+.theme-dark .my-account-area .custom-card form a {
   color: var(--mainColor) !important;
 }
 

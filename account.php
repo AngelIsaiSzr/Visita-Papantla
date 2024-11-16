@@ -1,9 +1,9 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit();
-}
+// if (!isset($_SESSION['user_id'])) {
+//     header("Location: login.php");
+//     exit();
+// }
 
 $nombre = implode(' ', array_slice(explode(' ', $_SESSION['nombre']), 0, 2));
 ?>
@@ -130,20 +130,20 @@ $nombre = implode(' ', array_slice(explode(' ', $_SESSION['nombre']), 0, 2));
                                     <ul class="list-group">
                                         <li class="list-group-item d-flex justify-content-between align-items-center">
                                             <span>Configurar perfil</span>
-                                            <a href="profile.php" class="btn btn-sm btn-primary">Ir</a>
+                                            <a href="profile.php" class="btn">Ir</a>
                                         </li>
                                         <li class="list-group-item d-flex justify-content-between align-items-center">
                                             <span>Historial de reservas</span>
-                                            <a href="reservations.php" class="btn btn-sm btn-secondary">Ver</a>
+                                            <a href="reservations.php" class="btn">Ver</a>
                                         </li>
                                         <li class="list-group-item d-flex justify-content-between align-items-center">
                                             <span>Seguridad de cuenta</span>
-                                            <a href="security.php" class="btn btn-sm btn-warning">Gestionar</a>
+                                            <a href="security.php" class="btn">Gestionar</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="logout mt-4 text-center">
-                                    <a href="assets/process/logout.php" class="btn btn-danger">Cerrar sesión</a>
+                                    <a href="assets/process/logout.php" class="btn">Cerrar sesión</a>
                                 </div>
                             </div>
                         </div>
