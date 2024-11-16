@@ -16,9 +16,6 @@ if ($result->num_rows > 0) {
 } else {
     $hoteles = [];
 }
-
-// Cerrar la conexión
-$link->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">

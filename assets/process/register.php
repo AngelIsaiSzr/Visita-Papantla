@@ -1,21 +1,6 @@
 <?php
-// Iniciar la sesión
 session_start();
-
-// Conectar a la base de datos
-$host_name = 'db5016594095.hosting-data.io';
-$database = 'dbs13455695';
-$user_name = 'dbu5410004';
-$password = 'VisitaPapantla@0';
-
-$link = new mysqli($host_name, $user_name, $password, $database);
-
-if ($link->connect_error) {
-    die('<p>Error al conectar con servidor MySQL: ' . $link->connect_error . '</p>');
-}
-
-// Establecer la codificación de caracteres a utf8mb4
-$link->set_charset("utf8mb4");
+include 'assets/config/db.php';
 
 // Obtener datos del formulario
 $nombre = $_POST['name'];
@@ -62,9 +47,4 @@ if ($stmt->execute()) {
     header("Location: ../../register.php?message=" . urlencode($message) . "&type=register");
     exit();
 }
-
-// Cerrar la conexión
-$check_email_query->close();
-$stmt->close();
-$link->close();
 ?>
