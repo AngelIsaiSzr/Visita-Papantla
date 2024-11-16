@@ -512,11 +512,22 @@ function toggleTheme() {
 
 // Immediately invoked function to set the theme on initial load
 (function () {
-    if (localStorage.getItem('clim_theme') === 'theme-dark') {
-        setTheme('theme-dark');
-        document.getElementById('slider').checked = false;
+    // Check if there's a saved theme in localStorage
+    const savedTheme = localStorage.getItem('clim_theme');
+    
+    if (savedTheme) {
+        // If a theme is stored, apply it
+        setTheme(savedTheme);
     } else {
+        // If no theme is stored, set the default theme (theme-light)
         setTheme('theme-light');
-        document.getElementById('slider').checked = true;
+    }
+
+    // Adjust the state of the toggle (slider)
+    const themeSlider = document.getElementById('slider');
+    if (savedTheme === 'theme-dark') {
+        themeSlider.checked = false;
+    } else {
+        themeSlider.checked = true;
     }
 })();

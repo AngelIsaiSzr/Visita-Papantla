@@ -254,7 +254,7 @@ session_start();
                                 <nav>
                                     <ol class="breadcrumb mb-0">
                                         <li class="breadcrumb-item">
-                                            <a href="index.html">
+                                            <a href="index.php">
                                                 <i class="bx bx-home-circle"></i>
                                             </a>
                                         </li>
