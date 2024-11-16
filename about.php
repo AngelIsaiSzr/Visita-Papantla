@@ -183,7 +183,7 @@ session_start();
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link active">
+                                    <a href="about.php" class="nav-link active">
                                         Acerca de
                                     </a>
                                 </li>

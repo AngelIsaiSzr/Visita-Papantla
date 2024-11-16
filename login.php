@@ -183,7 +183,7 @@ session_start();
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link">
+                                    <a href="about.php" class="nav-link">
                                         Acerca de
                                     </a>
                                 </li>
@@ -286,7 +286,7 @@ session_start();
                                         <a href="#" class="forgot-password">Olvidé mi contraseña</a>
                                     </div>
                                     <button class="blue-btn mx-auto d-block">Ingresar</button>
-                                    <p class="register-link text-center mt-3">¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+                                    <p class="register-link text-center mt-3">¿No tienes cuenta? <a href="register.php">Regístrate</a></p>
                                 </form>
                             </div>
                         </div>

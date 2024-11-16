@@ -205,7 +205,7 @@ $result = $link->query($sql);
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link">
+                                    <a href="about.php" class="nav-link">
                                         Acerca de
                                     </a>
                                 </li>

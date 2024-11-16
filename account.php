@@ -187,7 +187,7 @@ if (!isset($_SESSION['user_id'])) {
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link">
+                                    <a href="about.php" class="nav-link">
                                         Acerca de
                                     </a>
                                 </li>

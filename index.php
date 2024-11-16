@@ -185,7 +185,7 @@ session_start();
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link">
+                                    <a href="about.php" class="nav-link">
                                         Acerca de
                                     </a>
                                 </li>
@@ -253,7 +253,7 @@ session_start();
                                 <div class="banner-iner">
                                     <h5>Bienvenido a Visita Papantla</h5>
                                     <h2>Descubre el Pueblo Mágico #1 del Mundo</h2>
-                                    <a href="about.html" class="banner-btn">Acerca de</a>
+                                    <a href="about.php" class="banner-btn">Acerca de</a>
                                 </div>
                             </div>
                         </div>
@@ -384,7 +384,7 @@ session_start();
                                     nuestro equipo trabaja con dedicación y empeño para otorgar una excelente experiencia de viaje a todos y cada uno de nuestros clientes. 
                                        </p>
                                 <div class="btn-box">
-                                    <a href="about.html" class="btn style5">Descubre Más</a>
+                                    <a href="about.php" class="btn style5">Descubre Más</a>
                                 </div>
                             </div>
                         </div>
