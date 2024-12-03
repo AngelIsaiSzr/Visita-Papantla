@@ -323,6 +323,10 @@
   color: var(--mainColor) !important;
 }
 
+.theme-dark .hotel-details-area .agent-contact-inner {
+  background-color: var(--blackColor);
+}
+
 .theme-dark .hotel-list-style-2 li {
   color: #d3d3d3;
 }

@@ -140,7 +140,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                             </a>
                         </li>
                         <li class="nav-item d-lg-none">
-                            <a href="hotels.php" class="nav-link btn style1">Reserva Ahora</a>
+                            <a href="booking-form.php" class="nav-link btn style1">Reserva Ahora</a>
                         </li>
                     </ul>
                     <div class="other-options md-none">
@@ -154,7 +154,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                             </div>
                         </div>
                         <div class="option-item">
-                            <a href="hotels.php" class="btn style1">Reserva Ahora</a>
+                            <a href="booking-form.php" class="btn style1">Reserva Ahora</a>
                         </div>
                     </div>
                 </div>

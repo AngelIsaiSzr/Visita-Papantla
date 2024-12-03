@@ -154,7 +154,6 @@ if ($result->num_rows > 0) {
                                         <select class="form-control" name="hotel">
                                             <option selected>Hotel</option>
                                             <?php
-                                            // Generar las opciones del select con los nombres de los hoteles
                                             foreach ($hoteles as $hotel) {
                                                 echo '<option value="' . htmlspecialchars($hotel['id_hotel']) . '">' . htmlspecialchars($hotel['nombre']) . '</option>';
                                             }

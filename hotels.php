@@ -139,8 +139,8 @@ $result = $link->query($sql);
                                                 <div class="ps-2">
                                                     <?php
                                                     $estrellas = $row['estrellas'];
-                                                    $entero = floor($estrellas); // Parte entera de las estrellas
-                                                    $decimal = $estrellas - $entero; // Parte decimal
+                                                    $entero = floor($estrellas);
+                                                    $decimal = $estrellas - $entero;
                                             
                                                     // Genera estrellas llenas
                                                     for ($i = 1; $i <= $entero; $i++): ?>
@@ -164,8 +164,8 @@ $result = $link->query($sql);
                                             </div>
                                             <p class="text-body mb-3"><?= htmlspecialchars($row['descripcion']) ?></p>
                                             <div class="d-flex justify-content-between">
-                                                <a class="btn style1 rounded py-2 px-4" href="#">Ver Detalles</a>
-                                                <a class="btn style2 rounded py-2 px-4" href="#">Reservar Ahora</a>
+                                                <a class="btn style1 rounded py-2 px-4" href="hotel-details.php?id=<?= htmlspecialchars($row['id_hotel']) ?>">Ver Detalles</a>
+                                                <a class="btn style2 rounded py-2 px-4" href="booking-form.php">Reservar Ahora</a>
                                             </div>
                                         </div>
                                     </div>

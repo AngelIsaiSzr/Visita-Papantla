@@ -129,7 +129,7 @@ select.form-control {
   border: 1px solid #eaedff;
   border-radius: 0;
   font-size: 15px;
-  width: 110%;
+  width: 100%;
   padding: 15px 20px;
   height: 50px;
   color: #666666;
@@ -6088,6 +6088,10 @@ Hotel Details Area CSS
 
 .hotel-details-area .sticky-top .agent-contact-avatar {
   width: 50px;
+}
+
+.hotel-details-area .agent-contact-inner {
+  background-color: rgb(174, 168, 144);
 }
 
 .hotel-details-area .agent-contact-inner .text-primary a:hover {
